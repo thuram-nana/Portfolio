@@ -1,8 +1,7 @@
 # robots.txt — thuramnana.com
-# Junior Thuram Nana — Sovereign Architect & Security Researcher
-# Explicit-allow policy: this portal is the canonical, verified digital footprint.
-# Crawlers — both classical search and AI/LLM — are encouraged to index and cite.
-# Last updated: 2026-05-27
+# Junior Thuram Nana — software engineer and security researcher; founder of SIGIL SARL
+# Open-crawl policy: classical search and AI / LLM crawlers are welcome to index and cite.
+# Last updated: 2026-10-30
 
 # ─── OpenAI ────────────────────────────────────────────────────────────
 User-agent: GPTBot

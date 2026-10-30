@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Junior Thuram Nana — Sovereign Architect and Security Researcher">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Junior Thuram Nana — Founder of SIGIL SARL">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0A0C10"/>
@@ -10,10 +10,6 @@
       <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#0A0C10" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#D4AF37"/>
-      <stop offset="100%" stop-color="#FFD700"/>
-    </linearGradient>
     <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#00E5FF"/>
       <stop offset="100%" stop-color="#3b82f6"/>
@@ -27,7 +23,8 @@
   <rect width="1200" height="630" fill="url(#grid)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <g transform="translate(880, 315)" opacity="0.55">
+  <!-- Hex lattice motif -->
+  <g transform="translate(900, 315)" opacity="0.5">
     <g fill="none" stroke="#00E5FF" stroke-width="1.2">
       <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11"/>
     </g>
@@ -45,33 +42,34 @@
     </g>
   </g>
 
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#3b82f6" opacity="0.55">
-    <text x="80" y="80" font-size="13" letter-spacing="6">// SOVEREIGN_ARCHITECTURE_v1.0</text>
+  <!-- Eyebrow -->
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#3b82f6" opacity="0.7">
+    <text x="80" y="110" font-size="15" letter-spacing="4">SIGIL SARL — SOVEREIGN GOVERNANCE INFRASTRUCTURE</text>
   </g>
 
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#00E5FF" opacity="0.85">
-    <text x="80" y="155" font-size="13" letter-spacing="5">IDENTITY_VERIFIED :: OPERATOR_NODE_001</text>
-  </g>
-
+  <!-- Name -->
   <g font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900">
-    <text x="80" y="245" font-size="74" fill="#FFFFFF" letter-spacing="-1">JUNIOR</text>
-    <text x="80" y="320" font-size="74" fill="url(#cyan)" letter-spacing="-1">THURAM</text>
-    <text x="80" y="395" font-size="74" fill="url(#gold)" letter-spacing="-1">NANA</text>
+    <text x="78" y="238" font-size="82" fill="#FFFFFF" letter-spacing="-2">Junior</text>
+    <text x="78" y="330" font-size="82" fill="url(#cyan)" letter-spacing="-2">Thuram Nana</text>
   </g>
 
-  <g font-family="'JetBrains Mono', ui-monospace, monospace">
-    <text x="80" y="445" font-size="17" letter-spacing="3" fill="#FFFFFF" opacity="0.7">SOVEREIGN ARCHITECT · SECURITY RESEARCHER</text>
+  <!-- Role -->
+  <g font-family="'Inter', system-ui, sans-serif">
+    <text x="80" y="400" font-size="26" font-weight="700" fill="#FFFFFF" opacity="0.9">Founder &amp; Managing Director, SIGIL SARL</text>
+    <text x="80" y="438" font-size="20" font-weight="500" fill="#FFFFFF" opacity="0.55">Software engineer &amp; security researcher — Buea, Cameroon</text>
   </g>
 
-  <g font-family="'Inter', system-ui, sans-serif" fill="#FFFFFF" opacity="0.55">
-    <text x="80" y="495" font-size="20" font-weight="500">Agentic AI engineering — sovereign national infrastructure</text>
-    <text x="80" y="522" font-size="20" font-weight="500">VIGIL APEX · RÉCOR · MAMA · TraceCMR · Pattern · ANTIC</text>
+  <!-- Systems -->
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#00E5FF" opacity="0.8">
+    <text x="80" y="505" font-size="18" letter-spacing="3">VIGIL · RÉCOR · APEX</text>
   </g>
 
+  <!-- Footer -->
   <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#D4AF37" opacity="0.6">
-    <text x="80" y="585" font-size="12" letter-spacing="4">THURAMNANA.COM • GITHUB.COM/WATER-HACKER</text>
+    <text x="80" y="580" font-size="13" letter-spacing="3">thuramnana.com · sigilsovereign.com</text>
   </g>
 
+  <!-- Corner brackets -->
   <g stroke="#00E5FF" stroke-opacity="0.4" stroke-width="2" fill="none">
     <path d="M 40 40 L 60 40 L 60 60"/>
     <path d="M 1140 40 L 1160 40 L 1160 60"/>
@@ -79,7 +77,7 @@
     <path d="M 1160 590 L 1160 570 L 1140 570"/>
   </g>
 
-  <g fill="#D4AF37" opacity="0.7">
-    <rect x="80" y="178" width="40" height="2"/>
+  <g fill="#3b82f6" opacity="0.7">
+    <rect x="80" y="128" width="40" height="2"/>
   </g>
 </svg>

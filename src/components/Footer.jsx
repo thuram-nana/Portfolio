@@ -1,159 +1,83 @@
-// ─── Imports ───────────────────────────────────────────────────────────
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-// ─── Navigation Links Configuration ────────────────────────────────────
 const navLinks = [
-  { label: 'Intel', href: '#intel' },
-  { label: 'Infrastructure', href: '#infrastructure' },
-  { label: 'Library', href: '#library' },
-  { label: 'Vault', href: '#vault' },
-  { label: 'Mentorship', href: '#mentorship' },
-  { label: 'PGP', href: '#pgp' },
+  { label: 'About', href: '#about' },
+  { label: 'SIGIL', href: '#sigil' },
+  { label: 'Research', href: '#research' },
+  { label: 'Capabilities', href: '#capabilities' },
+  { label: 'Contact', href: '#contact' },
 ]
 
-// ─── Footer Component ──────────────────────────────────────────────────
 export default function Footer() {
-  const [emailCopied, setEmailCopied] = useState(false)
-
-  // ─ Copy email to clipboard ────────────────────────────────────────────
-  const copyEmail = () => {
-    navigator.clipboard.writeText('thuram@thuramnana.com')
-    setEmailCopied(true)
-    setTimeout(() => setEmailCopied(false), 2000)
-  }
-
-  // ─ Smooth scroll to section ───────────────────────────────────────────
   const handleNav = (href) => {
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
-
   const year = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="relative border-t border-[#00E5FF]/10 bg-[#050505]">
-      {/* Top section — 3 column layout */}
-      <div className="max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-3 gap-12">
-        {/* Brand col */}
-        <div className="space-y-5">
-          <div>
-            <div className="flex items-center gap-3 mb-3">
-              <FooterHex />
-              <div>
-                <div className="font-mono text-[#00E5FF] text-xs tracking-[0.2em] uppercase glow-cyan">
-                  THURAM NANA
-                </div>
-                <div className="font-mono text-[9px] text-[#D4AF37]/60 tracking-widest uppercase">
-                  SOVEREIGN TRUST
-                </div>
+    <footer className="relative border-t border-white/8 bg-[#070809]">
+      <div className="max-w-6xl mx-auto px-6 py-14 grid sm:grid-cols-3 gap-10">
+        {/* Brand */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <FooterHex />
+            <div className="leading-tight">
+              <div className="font-sans font-bold text-white text-sm">Junior Thuram Nana</div>
+              <div className="font-mono text-[9px] text-[#3b82f6]/70 tracking-[0.18em] uppercase">
+                Founder · SIGIL SARL
               </div>
             </div>
-            <p className="font-mono text-[10px] text-[#e0e0e0]/40 leading-relaxed">
-              Lead System Architect &amp; Security Researcher.
-              Building the sovereign technology stack.
-            </p>
           </div>
-
-          {/* OPSEC notice box */}
-          <div className="border border-[#00E5FF]/10 p-3" style={{ background: 'rgba(0,229,255,0.02)' }}>
-            <div className="font-mono text-[8px] text-[#00E5FF]/40 tracking-widest uppercase mb-1">⬡ OPSEC NOTICE</div>
-            <p className="font-mono text-[8px] text-[#e0e0e0]/30 leading-relaxed">
-              This portal is the only verified digital footprint of Junior Thuram Nana.
-              All other social profiles are considered unofficial.
-            </p>
-          </div>
+          <p className="font-sans text-[13px] text-[#e0e0e0]/45 leading-relaxed max-w-xs">
+            Building sovereign governance infrastructure for institutions — from Buea, Cameroon.
+          </p>
         </div>
 
-        {/* Nav col */}
+        {/* Nav */}
         <nav aria-label="Footer">
-          <div className="font-mono text-[9px] text-[#00E5FF]/40 tracking-[0.4em] uppercase mb-5">
-            NAVIGATION
+          <div className="font-mono text-[10px] text-[#e0e0e0]/35 tracking-[0.3em] uppercase mb-4">
+            Navigate
           </div>
           <div className="space-y-2.5">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => handleNav(link.href)}
-                className="block font-mono text-[10px] text-[#e0e0e0]/40 hover:text-[#00E5FF] tracking-widest uppercase transition-colors duration-200 text-left"
+                className="block font-sans text-[13px] text-[#e0e0e0]/50 hover:text-white transition-colors text-left"
               >
-                <span className="text-[#00E5FF]/20 mr-2" aria-hidden="true">›</span>
                 {link.label}
               </button>
             ))}
           </div>
         </nav>
 
-        {/* Contact col */}
-        <address className="not-italic">
-          <div className="font-mono text-[9px] text-[#00E5FF]/40 tracking-[0.4em] uppercase mb-5">
-            SECURE CHANNEL
+        {/* Contact */}
+        <div>
+          <div className="font-mono text-[10px] text-[#e0e0e0]/35 tracking-[0.3em] uppercase mb-4">
+            Reach me
           </div>
-
-          <div className="space-y-4">
-            {/* Email */}
-            <div>
-              <div className="font-mono text-[8px] text-[#e0e0e0]/30 tracking-widest uppercase mb-1.5">EMAIL</div>
-              <motion.button
-                onClick={copyEmail}
-                whileHover={{ x: 2 }}
-                aria-label="Copy email address thuram@thuramnana.com"
-                className="font-mono text-xs text-[#00E5FF]/80 hover:text-[#00E5FF] transition-colors track-wide break-all text-left"
-              >
-                thuram@thuramnana.com
-              </motion.button>
-              {emailCopied && (
-                <div className="font-mono text-[9px] text-green-400 mt-1">✓ copied</div>
-              )}
-            </div>
-
-            {/* Domain */}
-            <div>
-              <div className="font-mono text-[8px] text-[#e0e0e0]/30 tracking-widest uppercase mb-1.5">DOMAIN</div>
-              <div className="font-mono text-xs text-[#e0e0e0]/60">thuramnana.com</div>
-            </div>
-
-            {/* Flaire */}
-            <div>
-              <div className="font-mono text-[8px] text-[#e0e0e0]/30 tracking-widest uppercase mb-1.5">PROJECT SITE</div>
-              <a
-                href="https://www.flaireapp.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-xs text-[#D4AF37]/60 hover:text-[#D4AF37] transition-colors"
-              >
-                flaireapp.org
-              </a>
-              <div className="font-mono text-[9px] text-[#e0e0e0]/25 mt-0.5">Flaire EdTech — App Website</div>
-            </div>
-
-            {/* PGP */}
-            <div>
-              <div className="font-mono text-[8px] text-[#e0e0e0]/30 tracking-widest uppercase mb-1.5">PGP FINGERPRINT</div>
-              <div className="font-mono text-[9px] text-[#D4AF37]/60 tracking-wide leading-relaxed break-all">
-                C1C4 A87F EB43 04DB<br />
-                9E62 86A1 F013 6C58<br />
-                BB19 5F0C
-              </div>
-            </div>
+          <div className="space-y-2.5 font-sans text-[13px]">
+            <a href="mailto:thuram@thuramnana.com" className="block text-[#00E5FF]/80 hover:text-[#00E5FF] transition-colors break-all">
+              thuram@thuramnana.com
+            </a>
+            <a href="https://sigilsovereign.com" target="_blank" rel="noopener noreferrer" className="block text-[#e0e0e0]/50 hover:text-white transition-colors">
+              sigilsovereign.com ↗
+            </a>
+            <a href="https://github.com/thuram-nana" target="_blank" rel="noopener noreferrer" className="block text-[#e0e0e0]/50 hover:text-white transition-colors">
+              github.com/thuram-nana ↗
+            </a>
           </div>
-        </address>
+        </div>
       </div>
 
-      {/* Bottom bar — copyright & status */}
-      <div className="border-t border-[#00E5FF]/08 px-6 py-5">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
-          <div className="font-mono text-[9px] text-[#e0e0e0]/25 tracking-widest">
-            © {year} JUNIOR THURAM NANA — ALL RIGHTS RESERVED
+      <div className="border-t border-white/5 px-6 py-5">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+          <div className="font-mono text-[10px] text-[#e0e0e0]/30 tracking-wide">
+            © {year} Junior Thuram Nana · SIGIL SARL
           </div>
-          <div className="flex items-center gap-6">
-            <div className="font-mono text-[9px] text-[#e0e0e0]/20 tracking-widest">
-              BUILD: v1.0 // SOVEREIGN STACK
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] animate-pulse" />
-              <span className="font-mono text-[9px] text-[#00E5FF]/40 tracking-widest">SECURE</span>
-            </div>
+          <div className="font-mono text-[10px] text-[#e0e0e0]/25 tracking-wide">
+            Buea, Cameroon
           </div>
         </div>
       </div>
@@ -161,9 +85,8 @@ export default function Footer() {
   )
 }
 
-// ─── FooterHex Component ──────────────────────────────────────────────
 function FooterHex() {
-  const s = 28
+  const s = 26
   const cx = s / 2
   const cy = s / 2
   const r = s * 0.44
@@ -171,11 +94,10 @@ function FooterHex() {
     const a = (Math.PI / 3) * i - Math.PI / 6
     return `${cx + r * Math.cos(a)},${cy + r * Math.sin(a)}`
   }).join(' ')
-
   return (
-    <svg width={s} height={s} viewBox={`0 0 ${s} ${s}`} fill="none">
-      <polygon points={pts} fill="rgba(0,229,255,0.07)" stroke="#00E5FF" strokeWidth="1" opacity="0.8" />
-      <circle cx={cx} cy={cy} r={2} fill="#00E5FF" opacity="0.8" />
+    <svg width={s} height={s} viewBox={`0 0 ${s} ${s}`} fill="none" aria-hidden="true">
+      <polygon points={pts} fill="rgba(59,130,246,0.08)" stroke="#3b82f6" strokeWidth="1" />
+      <circle cx={cx} cy={cy} r={2} fill="#00E5FF" />
     </svg>
   )
 }
