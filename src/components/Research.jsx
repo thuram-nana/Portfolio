@@ -34,14 +34,14 @@ export default function Research() {
           className="mb-12"
         >
           <div className="font-mono text-[11px] text-[#3b82f6]/70 tracking-[0.3em] uppercase mb-5">
-            03 — Security research
+            03 · Security research
           </div>
           <h2 id="research-h" className="font-sans font-black text-3xl sm:text-4xl text-white leading-tight mb-4">
             Where SIGIL's discipline comes from
           </h2>
           <p className="font-sans text-[15px] text-[#e0e0e0]/60 leading-relaxed max-w-2xl">
             I study systems the way an adversary would, then disclose responsibly. It's the same instinct
-            that runs through SIGIL — nothing is trusted until it has been independently re-verified.
+            that runs through SIGIL: nothing is trusted until it has been independently re-verified.
           </p>
         </motion.div>
 

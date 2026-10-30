@@ -10,7 +10,7 @@ const systems = [
     status: 'Paid pilot',
     statusClass: 'badge-pilot',
     accent: '#34d399',
-    body: 'Detects, observes, and blocks cyberattacks — but only acts after an independent check confirms the threat. Authorized operators find vulnerabilities through a fail-closed authorization chain; every confirmed finding is signed and compiled into one tamper-evident dossier that re-verifies offline.',
+    body: 'Detects, observes, and blocks cyberattacks, but only acts after an independent check confirms the threat. Authorized operators find vulnerabilities through a fail-closed authorization chain; every confirmed finding is signed and compiled into one tamper-evident dossier that re-verifies offline.',
     points: ['Protect', 'Assess', 'Lead → verified fact', 'Remediate', 'Signed dossier'],
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     status: 'Pre-deployment',
     statusClass: 'badge-predeploy',
     accent: '#93c5fd',
-    body: 'A national beneficial-ownership registry built to the Beneficial Ownership Data Standard (BODS v0.4) — infrastructure for transparency of who really owns what. Demonstrated to and acknowledged by Open Ownership in July 2026.',
+    body: 'A national beneficial-ownership registry built to the Beneficial Ownership Data Standard (BODS v0.4). It makes clear who really owns what. Demonstrated to and acknowledged by Open Ownership in July 2026.',
     points: ['BODS v0.4', 'Acknowledged by Open Ownership'],
   },
   {
@@ -28,7 +28,7 @@ const systems = [
     status: 'Pre-deployment',
     statusClass: 'badge-predeploy',
     accent: '#93c5fd',
-    body: 'Surfaces risk and anomalies across public procurement so oversight bodies can act on evidence, not hunches — held to the same standard as every SIGIL system: findings stay leads until an independent check re-verifies them.',
+    body: 'Surfaces risk and anomalies across public procurement so oversight bodies can act on evidence, not hunches. It holds to the same standard as every SIGIL system: findings stay leads until an independent check re-verifies them.',
     points: ['Procurement oversight', 'Re-verified findings'],
   },
 ]
@@ -49,7 +49,7 @@ export default function Sigil() {
           className="mb-10"
         >
           <div className="font-mono text-[11px] text-[#3b82f6]/70 tracking-[0.3em] uppercase mb-5">
-            02 — SIGIL SARL
+            02 · SIGIL SARL
           </div>
           <h2 id="sigil-h" className="font-sans font-black text-3xl sm:text-5xl text-white leading-[1.05] mb-5">
             Sovereign governance{' '}
@@ -65,7 +65,7 @@ export default function Sigil() {
             </span>
           </h2>
           <p className="font-sans text-[15px] text-[#e0e0e0]/70 leading-relaxed max-w-2xl">
-            SIGIL SARL — <span className="text-white/90">Sovereign Integrity Governance Infrastructure Labs</span> —
+            SIGIL SARL, <span className="text-white/90">Sovereign Integrity Governance Infrastructure Labs</span>,
             is a Cameroonian GovTech and RegTech company I founded in 2023. We build governance and security
             infrastructure for public institutions, banks, and companies: powerful systems that stay provably
             under their owner's control.
@@ -145,7 +145,7 @@ export default function Sigil() {
                 What "sovereign" means here
               </div>
               <p className="font-sans text-sm text-[#e0e0e0]/70 leading-relaxed max-w-2xl">
-                Deploy on your own premises or cloud and you hold the keys and the data — SIGIL has no default
+                Deploy on your own premises or cloud and you hold the keys and the data. SIGIL has no default
                 access and receives no telemetry. A managed service is in preparation for teams who want it run
                 for them. Either way, every dossier verifies on its own, without having to trust us.
               </p>
