@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'SIGIL', href: '#sigil' },
-  { label: 'Work', href: '#work' },
+  { label: 'Research', href: '#research' },
   { label: 'Capabilities', href: '#capabilities' },
   { label: 'Contact', href: '#contact' },
 ]

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Sigil from './components/Sigil'
-import Work from './components/Work'
+import Research from './components/Research'
 import Capabilities from './components/Capabilities'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -21,7 +21,7 @@ export default function App() {
             <Hero />
             <About />
             <Sigil />
-            <Work />
+            <Research />
             <Capabilities />
             <Contact />
           </main>

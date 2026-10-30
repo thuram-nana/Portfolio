@@ -58,10 +58,10 @@ export default function About() {
               a GovTech and RegTech company I started in 2023.
             </p>
             <p>
-              I began in independent security research — responsibly disclosing flaws to Meta and Samsung —
-              and in shipping products end to end: an AI-powered learning platform, a decentralized Web3
-              token sale, and a cross-platform community app. That work taught me the same lesson each time:
-              institutions are asked to trust software they can neither see into nor control.
+              I began in independent security research — responsibly disclosing flaws to companies like
+              Meta and Samsung — and in building software across mobile, web, and backend systems. That
+              work taught me the same lesson each time: institutions are asked to trust software they can
+              neither see into nor control.
             </p>
             <p>
               SIGIL is my answer. We build governance infrastructure for public institutions, banks, and
