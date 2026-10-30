@@ -5,101 +5,70 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Critical inline CSS — applies during initial HTML parse, before the
-         external stylesheet and before JS. Guarantees a dark canvas from the
-         very first paint so no white page flashes before the app renders. -->
+    <!-- Critical inline CSS — dark canvas from first paint, no white flash. -->
     <style>
       html { background-color: #0A0C10; }
       body { background-color: #0A0C10; color: #e0e0e0; margin: 0; min-height: 100vh; }
       #root { background-color: #0A0C10; min-height: 100vh; }
+      .nojs { max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem; font-family: Inter, system-ui, sans-serif; line-height: 1.6; }
+      .nojs h1 { font-size: 2rem; line-height: 1.15; }
+      .nojs h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #fff; }
+      .nojs a { color: #00E5FF; }
+      .nojs .muted { color: #9aa0ab; }
     </style>
 
-    <title>Junior Thuram Nana — Software Engineer, System Architect & OffSec Expert (Cameroon)</title>
+    <title>Junior Thuram Nana — Founder of SIGIL SARL · Engineer & Security Researcher</title>
 
     <!-- Primary meta -->
-    <meta name="description" content="Junior Thuram Nana — Cameroonian software engineer, system architect, full-stack developer and offensive-security expert based in Buea, Cameroon. Solo architect of VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected)." />
-    <meta name="keywords" content="Junior Thuram Nana, Thuram Nana, Junior Nana, Junior Thuram, Thuram Junior Nana, Nana Junior Thuram, J. Thuram Nana, JTN, software engineer Cameroon, software engineer Buea, software developer Cameroon, system architect Cameroon, system architect Buea, solution architect, cloud architect, sovereign architect, AI engineer Cameroon, AI engineer, agentic AI engineer, LLM engineer, prompt engineer, machine learning engineer, full-stack developer, front-end developer, back-end developer, mobile developer, web developer, Web3 developer, blockchain developer, smart-contract developer, Solidity developer, Rust developer, TypeScript developer, Python developer, Go developer, Flutter developer, Dart developer, React developer, Node.js developer, DevOps engineer, SRE, site reliability engineer, platform engineer, infrastructure engineer, Kubernetes engineer, cryptography engineer, security researcher, security engineer, offensive security expert, offensive security Cameroon, offsec expert, offsec Cameroon, penetration tester, pentester Cameroon, red team operator, bug bounty hunter, vulnerability researcher, zero-day researcher, application security engineer, cloud security engineer, mobile security engineer, self-taught engineer, autodidact engineer, polyglot engineer, Cameroon, Buea, South-West Region, Cameroonian software engineer, Cameroonian AI engineer, Cameroonian system architect, Got U Connected, GUC, FLAIRE, flaireapp.org, VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, BlockEarth, blockearth.app, FATF R.24, FATF R.25, EUDR, EU 2023/1115, beneficial ownership, anti-corruption, Hyperledger Fabric, Polygon, Ethereum, EVM, Solidity, Rust, TypeScript, Python, Go, Flutter, Dart, React, Next.js, Bayesian, Dempster-Shafer, Halo2, FROST, Ed25519, BLAKE3, PBKDF2, AES-256-GCM, OWASP WSTG, OWASP ASVS, OWASP API Top 10, OWASP LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, PASTA, Kubernetes, KEDA, Helm, Caddy, PgBouncer, Redis Sentinel, Patroni, HAProxy, SPIRE, SPIFFE, HashiCorp Vault, Cloudflare, CloudFront, Terraform, OpenTelemetry, Prometheus, Grafana, Tempo, Loki, Pyrra, SLO, SLSA Level 3, SLSA Level 4, cosign, SBOM, Sigstore, IndexNow, sovereign infrastructure, nation-scale platform, agentic engineering, Claude Code, Anthropic, thuram-nana, Water-Hacker" />
+    <meta name="description" content="Junior Thuram Nana — founder & managing director of SIGIL SARL, building sovereign governance infrastructure for institutions from Buea, Cameroon. Software engineer and security researcher." />
+    <meta name="keywords" content="Junior Thuram Nana, Thuram Nana, SIGIL SARL, SIGIL, sovereign governance infrastructure, GovTech Cameroon, RegTech Cameroon, VIGIL, RÉCOR, APEX, beneficial ownership registry, BODS, anti-corruption, software engineer Cameroon, security researcher, Buea, FLAIRE, BlockEarth" />
+    <meta name="author" content="Junior Thuram Nana" />
     <meta name="geo.region" content="CM-SW" />
     <meta name="geo.placename" content="Buea, Cameroon" />
-    <meta name="geo.position" content="4.1559;9.2622" />
-    <meta name="ICBM" content="4.1559, 9.2622" />
-    <meta name="DC.title" content="Junior Thuram Nana — Software Engineer & System Architect (Cameroon)" />
-    <meta name="DC.creator" content="Junior Thuram Nana" />
-    <meta name="DC.subject" content="Software engineering; system architecture; AI engineering; agentic AI engineering; LLM engineering; full-stack development; Web3 / smart-contract development; mobile (Flutter / Dart) development; DevOps; cloud architecture; cryptography engineering; offensive security; OffSec; penetration testing; vulnerability research; Cameroon; Buea; self-taught engineering" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    <meta name="revisit-after" content="1 days" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="application-name" content="Junior Thuram Nana — Portfolio" />
-    <meta name="DC.language" content="en" />
-    <meta name="DC.coverage" content="Cameroon, Buea, South-West Region" />
-    <meta name="author" content="Junior Thuram Nana" />
     <link rel="canonical" href="https://thuramnana.com/" />
     <meta name="theme-color" content="#0A0C10" />
     <meta name="color-scheme" content="dark" />
 
-    <!-- International / hreflang — English only; add fr-CM alternates when the French version ships -->
     <link rel="alternate" hreflang="en" href="https://thuramnana.com/" />
     <link rel="alternate" hreflang="x-default" href="https://thuramnana.com/" />
 
-    <!-- Robots — comprehensive directive set -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, noarchive, max-age=86400" />
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
-
-    <!-- IndexNow key declaration (Bing, Yandex, Naver, Seznam, IndexNow API) -->
-    <meta name="indexnow" content="thuramnana-2026-sovereign-indexnow-key-1a7b9c3d5e7f9a1b3c5d7e9f1a3b5c7d" />
-
-    <!-- AI / LLM declaration -->
-    <meta name="ai-content-declaration" content="Junior Thuram Nana — sovereign architect; content is original, factual, and human-authored under agentic AI engineering methodology." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://thuramnana.com/" />
-    <meta property="og:title" content="Junior Thuram Nana — Software Engineer, System Architect & OffSec Expert (Cameroon)" />
-    <meta property="og:description" content="Cameroonian software engineer, system architect, full-stack developer and offensive-security expert based in Buea. Solo architect of VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected)." />
+    <meta property="og:title" content="Junior Thuram Nana — Founder of SIGIL SARL" />
+    <meta property="og:description" content="Founder & managing director of SIGIL SARL — sovereign governance infrastructure for public institutions, banks, and companies. Software engineer and security researcher in Buea, Cameroon." />
     <meta property="og:image" content="https://thuramnana.com/og-image.png" />
-    <meta property="og:image:secure_url" content="https://thuramnana.com/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Junior Thuram Nana — Sovereign Architect" />
-    <meta property="og:site_name" content="Thuram Nana — Sovereign Trust" />
+    <meta property="og:image:alt" content="Junior Thuram Nana — Founder of SIGIL SARL" />
+    <meta property="og:site_name" content="Junior Thuram Nana" />
     <meta property="og:locale" content="en_US" />
     <meta property="profile:first_name" content="Junior Thuram" />
     <meta property="profile:last_name" content="Nana" />
 
-    <!-- Twitter / X card (no account handles — this portal is the only verified digital footprint;
-         any social-media profile claiming to be Junior Thuram Nana is unofficial per OPSEC stance) -->
+    <!-- Twitter / X card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Junior Thuram Nana — Software Engineer & System Architect (Cameroon)" />
-    <meta name="twitter:description" content="Cameroonian software engineer, system architect, full-stack developer and offensive-security expert in Buea. Solo architect of VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected)." />
+    <meta name="twitter:title" content="Junior Thuram Nana — Founder of SIGIL SARL" />
+    <meta name="twitter:description" content="Founder & MD of SIGIL SARL — sovereign governance infrastructure for institutions. Engineer and security researcher, Buea, Cameroon." />
     <meta name="twitter:image" content="https://thuramnana.com/og-image.png" />
-    <meta name="twitter:image:alt" content="Junior Thuram Nana — Sovereign Architect" />
+    <meta name="twitter:image:alt" content="Junior Thuram Nana — Founder of SIGIL SARL" />
 
     <!-- Discovery -->
     <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <link rel="alternate" type="application/atom+xml" title="Junior Thuram Nana — Project Updates" href="/feed.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Junior Thuram Nana — Updates" href="/feed.xml" />
     <link rel="author" href="/humans.txt" />
     <link rel="alternate" type="application/ld+json" title="Machine-readable entity descriptor" href="/entity.jsonld" />
-    <!-- Verified-identity landing pages (deep-linked for entity disambiguation) -->
     <link rel="related" href="/who-is-junior-thuram-nana.html" title="Identity / disambiguation page" />
     <link rel="related" href="/press.html" title="Press kit" />
-    <link rel="related" href="/projects.html" title="Full project index" />
+    <link rel="related" href="/projects.html" title="Project index" />
     <link rel="me" href="https://github.com/thuram-nana" />
-    <link rel="webmention" href="https://thuramnana.com/" />
-    <link rel="pingback" href="https://thuramnana.com/" />
-    <!-- IndexNow proof key -->
-    <link rel="indexnow-key" href="/thuramnana-2026-sovereign-indexnow-key-1a7b9c3d5e7f9a1b3c5d7e9f1a3b5c7d.txt" />
+    <link rel="me" href="https://sigilsovereign.com" />
 
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/og-image.png" as="image" type="image/png" />
-    <link rel="dns-prefetch" href="https://github.com" />
-    <link rel="dns-prefetch" href="https://www.flaireapp.org" />
-    <link rel="dns-prefetch" href="https://blockearth.app" />
-
-    <!-- Fonts (unchanged) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -111,87 +80,14 @@
       "@type": "Person",
       "@id": "https://thuramnana.com/#person",
       "name": "Junior Thuram Nana",
-      "alternateName": [
-        "Thuram Nana",
-        "Junior Nana",
-        "Junior Thuram",
-        "Thuram Junior Nana",
-        "Nana Junior Thuram",
-        "Thuram Junior",
-        "Nana Thuram",
-        "J. Thuram Nana",
-        "J. T. Nana",
-        "JTN",
-        "Junior (engineer)",
-        "Thuram (engineer)",
-        "Nana (engineer)",
-        "Sovereign Architect",
-        "thuram-nana",
-        "Water-Hacker"
-      ],
+      "alternateName": ["Thuram Nana", "Junior Nana"],
       "givenName": "Junior Thuram",
       "familyName": "Nana",
       "email": "thuram@thuramnana.com",
       "url": "https://thuramnana.com",
       "image": "https://thuramnana.com/og-image.png",
-      "jobTitle": [
-        "Software Engineer",
-        "Senior Software Engineer",
-        "Staff Software Engineer",
-        "Principal Engineer",
-        "System Architect",
-        "Solution Architect",
-        "Cloud Architect",
-        "Lead System Architect",
-        "Sovereign Architect",
-        "Full-Stack Developer",
-        "Front-End Developer",
-        "Back-End Developer",
-        "Mobile Developer",
-        "Web Developer",
-        "Web3 Developer",
-        "Blockchain Developer",
-        "Smart-Contract Developer",
-        "Solidity Developer",
-        "Rust Developer",
-        "TypeScript Developer",
-        "Python Developer",
-        "Go Developer",
-        "Flutter Developer",
-        "Dart Developer",
-        "React Developer",
-        "Node.js Developer",
-        "DevOps Engineer",
-        "Site Reliability Engineer",
-        "Platform Engineer",
-        "Infrastructure Engineer",
-        "Kubernetes Engineer",
-        "AI Engineer",
-        "Agentic AI Engineer",
-        "LLM Engineer",
-        "Machine Learning Engineer",
-        "Prompt Engineer",
-        "Cryptography Engineer",
-        "Security Researcher",
-        "Security Engineer",
-        "Offensive Security Engineer",
-        "OffSec Expert",
-        "Penetration Tester",
-        "Red Team Operator",
-        "Bug Bounty Hunter",
-        "Vulnerability Researcher",
-        "Zero-Day Researcher",
-        "Application Security Engineer",
-        "Cloud Security Engineer",
-        "Cryptographic Auditor",
-        "Mobile Security Engineer",
-        "Data Engineer",
-        "Database Engineer",
-        "Open-Source Contributor",
-        "Founder",
-        "CTO / Technical Co-Founder"
-      ],
-      "description": "Junior Thuram Nana is a Cameroonian software engineer, system architect, AI engineer, full-stack developer, DevOps engineer, Web3 / smart-contract developer, mobile (Flutter / Dart) engineer, cryptography engineer and offensive-security expert based in Buea, South-West Region, Cameroon. He is self-taught: his expertise is the product of years of continuous independent exploration, primary-source research, and disciplined self-study — not a school, not an institutional curriculum, not any single employer. Solo architect and developer of record on every system in his portfolio: VIGIL APEX (real-time anti-corruption intelligence), RÉCOR (FATF R.24/R.25 beneficial-ownership registry), MAMA (national maternal-health coordination platform), TraceCMR (sovereign EUDR / EU 2023/1115 compliance), Pattern (investigative intelligence), CRUCIBLE (reasoning-driven offensive-security framework), FLAIRE (AI-powered EdTech at flaireapp.org), BlockEarth (decentralised Web3 ETH token-sale at blockearth.app), and GUC / Got U Connected (a cross-platform Flutter / Dart student-and-staff community platform he designed and built). Operates as a one-person engineering organisation through disciplined agentic AI engineering. Maintains zero social-media presence by OPSEC stance: thuramnana.com is the only verified digital footprint, any third-party social profile claiming to be Junior Thuram Nana is unofficial.",
+      "jobTitle": ["Founder & Managing Director, SIGIL SARL", "Software Engineer", "Security Researcher"],
+      "description": "Junior Thuram Nana is a self-taught software engineer and security researcher based in Buea, Cameroon, and the founder and managing director of SIGIL SARL (Sovereign Integrity Governance Infrastructure Labs), a GovTech and RegTech company. SIGIL builds governance infrastructure for public institutions, banks, and companies — systems where the institution holds the keys and data, and every consequential action is authorized, bounded, and independently re-verified. He has also shipped FLAIRE (an AI-powered EdTech platform) and BlockEarth (a decentralized Web3 token sale), and responsibly disclosed security flaws to Meta and Samsung.",
       "nationality": { "@type": "Country", "name": "Cameroon" },
       "address": {
         "@type": "PostalAddress",
@@ -199,148 +95,44 @@
         "addressRegion": "South-West Region",
         "addressLocality": "Buea"
       },
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Buea, South-West Region, Cameroon",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CM",
-          "addressRegion": "South-West Region",
-          "addressLocality": "Buea"
-        }
-      },
-      "workLocation": {
-        "@type": "Place",
-        "name": "Cameroon (remote, worldwide engagements)",
-        "address": { "@type": "PostalAddress", "addressCountry": "CM" }
-      },
-      "hasOccupation": [
-        {
-          "@type": "Occupation",
-          "name": "Software Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Full-stack engineering, distributed systems, cryptographic infrastructure, agentic AI engineering, offensive security, mobile (Flutter / Dart), smart contracts (Solidity / Rust), Hyperledger Fabric, Polygon, Kubernetes, observability, SLSA supply-chain provenance."
-        },
-        {
-          "@type": "Occupation",
-          "name": "System Architect",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Nation-scale platform architecture, triple-witness audit chains, FROST / Halo2 / Ed25519 cryptography, FATF R.24/R.25 registry design, EUDR (EU 2023/1115) compliance pipelines, offline-first & safety-critical systems, multi-tier connectivity (T1–T7), V-Model discipline, defence-in-depth security."
-        },
-        {
-          "@type": "Occupation",
-          "name": "AI Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "LLM orchestration, agentic AI engineering, prompt engineering, subagent fleets, multi-volume specification discipline, calibrated extraction pipelines, 12-layer LLM safety stacks, Bayesian + Dempster-Shafer fusion, RAG, evaluation harnesses, model selection, temperature ceilings, anti-hallucination posture."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Agentic AI Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Long-horizon orchestration of Claude Code / Opus-tier models, subagent specialisation, skills / rules architectures, phase-gated delivery, 6-volume specification compliance, autonomous loop design, planning + verification loops."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Offensive Security Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Vulnerability research, zero-day discovery (Meta / WhatsApp CVE 2024, Samsung Mobile 2025), reasoning-driven adversary emulation, OWASP WSTG / ASVS / API / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, PASTA, the CRUCIBLE framework, red-team operations."
-        },
-        {
-          "@type": "Occupation",
-          "name": "OffSec Expert / Penetration Tester",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Web pentest, API pentest, mobile pentest, cloud pentest, container / CI-CD security, source-code review, LLM Top 10 testing, responsible disclosure, exploit development, post-exploitation."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Full-Stack Developer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "TypeScript, Rust, Python, Solidity, Dart / Flutter, React, Next.js, Postgres, Neo4j, Redis Streams, Kubernetes, Helm, Caddy, PgBouncer, CI/CD with SLSA Level 3/4 provenance."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Web3 / Smart-Contract Developer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Solidity, EVM internals, Polygon mainnet, Ethereum, smart-contract architecture, ETH token sales, wallet integration (MetaMask / WalletConnect / Coinbase Wallet), time-lock contracts, gas optimisation, non-custodial flows, on-chain governance (VIGILGovernance.sol)."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Mobile Developer (Flutter / Dart)",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Flutter, Dart, Firebase, Cloud Firestore, cross-platform iOS / Android / web from a single codebase, offline-first patterns, real-time sync, location services, push notifications."
-        },
-        {
-          "@type": "Occupation",
-          "name": "DevOps / Platform Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Kubernetes, Helm, KEDA, Caddy, Keepalived VRRP, PgBouncer, Redis Sentinel, HAProxy, Patroni, Vault, SPIRE / SPIFFE, GitHub Actions, Netlify, Cloudflare, CloudFront, Litmus chaos engineering, Prometheus, Grafana, Tempo, Loki, OpenTelemetry, Pyrra SLOs, SLSA L3/L4."
-        },
-        {
-          "@type": "Occupation",
-          "name": "Cryptography Engineer",
-          "occupationLocation": { "@type": "Country", "name": "Cameroon" },
-          "skills": "Ed25519, BLAKE3, AES-256-GCM, PBKDF2, FROST threshold signing, Halo2 zero-knowledge proofs, Shamir secret sharing, hardware-key (YubiKey / FIDO2) flows, OpenTimestamps, hash-chain audit logging, PGP."
-        }
-      ],
-      "worksFor": [
-        { "@type": "Organization", "name": "VIGIL APEX SAS" },
-        { "@type": "Organization", "name": "RÉCOR Consortium" },
-        { "@type": "Organization", "name": "TraceCMR Programme Office" }
-      ],
-      "knowsHow": "Self-taught polyglot engineer. Technical expertise is the product of continuous independent exploration, primary-source research, and self-study across security, distributed systems, cryptography, mobile, AI, and infrastructure — not the product of any institutional curriculum.",
-      "disambiguatingDescription": "Junior Thuram Nana is a Cameroonian software engineer, system architect, AI engineer and OffSec expert based in Buea, Cameroon — a distinct entity from any other public figure named Thuram, Nana, or Junior. He is unrelated to the French footballers Marcus Thuram (Inter Milan striker) and Lilian Thuram (1998 FIFA World Cup winner), to whom he has no family, professional, or geographic connection. He is also distinct from any other software engineer, athlete, musician, or public figure who happens to share any of these given or family names. The canonical reference for this person is the portfolio at https://thuramnana.com.",
+      "worksFor": { "@id": "https://sigilsovereign.com/#organization" },
       "knowsAbout": [
-        "Agentic AI Engineering",
-        "Sovereign National Infrastructure",
-        "Vulnerability Research",
-        "Offensive Security & Adversary Emulation",
-        "Beneficial Ownership Registries (FATF R.24 / R.25)",
-        "EU Deforestation Regulation (EUDR — EU 2023/1115)",
-        "Anti-Corruption Intelligence",
-        "Hyperledger Fabric",
-        "Polygon / EVM Smart Contracts",
-        "FROST-Ed25519 Threshold Signing",
-        "Halo2 Zero-Knowledge Proofs",
-        "Bayesian Inference & Dempster-Shafer Fusion",
-        "Rust, TypeScript, Solidity, Python, Flutter, Dart",
-        "Safety-Critical & Offline-First Systems",
-        "OWASP WSTG / ASVS / API / LLM Top 10",
-        "MITRE ATT&CK, PTES, NIST 800-115, PASTA"
+        "Governance infrastructure",
+        "Regulatory technology (RegTech)",
+        "Government technology (GovTech)",
+        "Security research and responsible disclosure",
+        "Beneficial ownership transparency (BODS)",
+        "Full-stack and mobile engineering",
+        "Smart contracts and Web3"
       ],
       "sameAs": [
-        "https://github.com/thuram-nana",
-        "https://www.flaireapp.org/",
-        "https://blockearth.app/",
-        "https://thuramnana.com/.well-known/security.txt",
-        "https://thuramnana.com/llms.txt"
-      ],
-      "identifier": [
-        {
-          "@type": "PropertyValue",
-          "propertyID": "canonical-url",
-          "value": "https://thuramnana.com/"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "github-username",
-          "value": "thuram-nana"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "pgp-fingerprint",
-          "value": "C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "pgp-key-id",
-          "value": "BB195F0C"
-        }
-      ],
-      "subjectOf": {
-        "@type": "WebSite",
-        "@id": "https://thuramnana.com/#website",
-        "url": "https://thuramnana.com/"
-      }
+        "https://sigilsovereign.com",
+        "https://github.com/thuram-nana"
+      ]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: Organization (SIGIL SARL) ──────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://sigilsovereign.com/#organization",
+      "name": "SIGIL SARL",
+      "legalName": "SIGIL SARL",
+      "alternateName": "Sovereign Integrity Governance Infrastructure Labs",
+      "url": "https://sigilsovereign.com",
+      "foundingDate": "2023",
+      "founder": { "@id": "https://thuramnana.com/#person" },
+      "description": "A Cameroonian GovTech and RegTech company building sovereign governance infrastructure for public institutions, banks, and companies: systems where the institution holds the cryptographic keys and data, and every consequential action is authorized, bounded, and independently re-verified. Systems include VIGIL (governed cybersecurity and evidence platform), RÉCOR (beneficial-ownership registry to BODS v0.4), and APEX (anti-corruption intelligence for public procurement).",
+      "foundingLocation": { "@type": "Place", "name": "Buea, Cameroon" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM",
+        "addressRegion": "South-West Region",
+        "addressLocality": "Buea"
+      },
+      "areaServed": "Worldwide"
     }
     </script>
 
@@ -349,831 +141,61 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "https://thuramnana.com/",
-      "name": "Thuram Nana — Sovereign Trust",
-      "description": "Portfolio and verified digital footprint of Junior Thuram Nana — Sovereign Architect, Agentic AI Engineer and Security Researcher.",
-      "inLanguage": "en",
-      "author": {
-        "@type": "Person",
-        "name": "Junior Thuram Nana",
-        "url": "https://thuramnana.com/"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://thuramnana.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- ─── JSON-LD: ProfessionalService ────────────────────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Thuram Nana — Sovereign Architecture Practice",
-      "url": "https://thuramnana.com/",
-      "description": "Solo architectural practice delivering sovereign, nation-scale digital infrastructure: anti-corruption intelligence, beneficial ownership registries, maternal-health coordination, EUDR compliance, investigative intelligence, sovereign cyber operations, and reasoning-driven offensive security.",
-      "founder": { "@type": "Person", "name": "Junior Thuram Nana" },
-      "areaServed": [
-        { "@type": "Country", "name": "Cameroon" },
-        { "@type": "Place", "name": "FATF jurisdictions" },
-        { "@type": "Place", "name": "EUDR-affected exporter states" }
-      ],
-      "knowsLanguage": ["en", "fr"],
-      "serviceType": [
-        "Sovereign Infrastructure Architecture",
-        "Agentic AI Engineering",
-        "Vulnerability Research & Disclosure",
-        "Offensive Security Framework Engineering",
-        "Cryptographic Audit-Chain Design",
-        "Forensic Compliance Pipelines"
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: Projects (SoftwareApplication × 9) ─────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "VIGIL APEX",
-      "applicationCategory": "GovernmentApplication",
-      "applicationSubCategory": "Anti-Corruption Intelligence Platform",
-      "operatingSystem": "Linux (HPE DL380 Gen11 cluster, Kubernetes)",
-      "description": "Real-time public finance compliance and anti-corruption intelligence platform. Ingests 26 public data sources, runs 43 deterministic fraud patterns across 8 categories, fuses signals through a Bayesian certainty engine (ECE target < 5%), and escalates only on a 3-of-5 hardware-key (YubiKey + Shamir) council quorum. Every state transition is anchored to a triple-witness audit chain: Postgres hash chain + Polygon mainnet (VIGILAnchor.sol) + Hyperledger Fabric.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["TypeScript", "Rust", "Python", "Solidity"],
-      "softwareRequirements": "Kubernetes, Postgres + Drizzle, Neo4j, Redis Streams, Polygon Mainnet, Hyperledger Fabric, HashiCorp Vault"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "RÉCOR",
-      "applicationCategory": "GovernmentApplication",
-      "applicationSubCategory": "National Beneficial Ownership Registry (FATF R.24 / R.25)",
-      "operatingSystem": "Linux",
-      "description": "National beneficial ownership registry for Cameroon, designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline (schema parity → identity → sanctions → PEP → adverse media → graph/ML → Dempster-Shafer fusion → review → public consultation). Every declaration is browser-signed (Ed25519 via Web Crypto), receipted with BLAKE3, and anchored to a Hyperledger Fabric audit channel. SLSA Level 3 supply chain.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Rust", "TypeScript"],
-      "softwareRequirements": "axum, sqlx, tonic, React 19, Vite 6, Hyperledger Fabric, SPIFFE/SPIRE, HAProxy 2.x, PgBouncer, Kafka (KRaft), HashiCorp Vault"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "MAMA",
-      "applicationCategory": "HealthApplication",
-      "applicationSubCategory": "Sovereign Maternal & Neonatal Mobilization Architecture",
-      "operatingSystem": "Linux, Offline-First mobile",
-      "description": "Sovereign, open-source (Apache 2.0), offline-first and safety-critical maternal and neonatal coordination platform for Cameroon. Eight architectural planes engineered against twelve binding doctrines (D-01 → D-12), spanning seven connectivity tiers (T1 fibre → T7 paper-of-record) so the platform degrades gracefully from urban facilities to rural sites with no network. V-Model discipline, defence-in-depth security, end-to-end audit chain with integrity proofs.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Rust", "TypeScript", "Dart"],
-      "license": "https://www.apache.org/licenses/LICENSE-2.0"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "TraceCMR",
-      "applicationCategory": "GovernmentApplication",
-      "applicationSubCategory": "Sovereign EUDR Compliance Platform (EU 2023/1115)",
-      "operatingSystem": "Linux",
-      "description": "Sovereign infrastructure designed to let the Republic of Cameroon meet the 30 December 2026 entry into application of the EU Deforestation Regulation. Registers every relevant agricultural and forestry plot, observes them against the 2020 deforestation baseline, anchors a cryptographic chain of custody from farmer to port of loading, and submits EU Information System Due Diligence Statements. Ten Hyperledger Fabric chaincodes, five Ring 0 cryptographic services (FROST threshold signer, Halo2 prover, Halo2 verifier, OpenTimestamps anchor, SPIRE controller). SLSA Level 4 build provenance.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Go", "Rust", "TypeScript", "Dart"],
-      "softwareRequirements": "Hyperledger Fabric, Connect-Go, Kafka + Flink + Temporal, FROST-Ed25519, Halo2, OpenTimestamps, SPIRE/SPIFFE, Sentinel + Planet + NICFI satellite pipelines, STAC + OpenEO, Neo4j"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Pattern",
-      "applicationCategory": "GovernmentApplication",
-      "applicationSubCategory": "Classified-Aware Investigative Intelligence Platform",
-      "operatingSystem": "Linux",
-      "isBasedOn": "https://github.com/alephdata/aleph",
-      "description": "Sovereign investigative intelligence platform built on OCCRP Aleph (MIT) that indexes structured and unstructured material (documents, data tables, registries, leaks) and makes them searchable, cross-referenceable and analytically tractable. Classification-aware UI with provenance badges and sealed-state indicators, typed entity model, cryptographic provenance for every artefact, bilingual French / English interface defaulting to fr-CM. Cryptographic roadmap: per-workspace seal hashes, FROST-style threshold signing of evidence chains, Halo2 zero-knowledge attestation of dataset membership.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Python", "TypeScript"],
-      "softwareRequirements": "Flask, SQLAlchemy 2, PostgreSQL (3 logical DBs), Elasticsearch, Redis, React, Procrastinate, FollowTheMoney, Docker Compose",
-      "license": "https://opensource.org/licenses/MIT"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "CRUCIBLE",
-      "applicationCategory": "SecurityApplication",
-      "applicationSubCategory": "Reasoning-Driven Offensive Security Framework",
-      "operatingSystem": "Linux",
-      "description": "Reusable multi-target framework for self-directed penetration testing and adversary emulation across every owned application. Drives an offensive-security agent through a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot) rather than a static checklist. Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115 and PASTA. Built-in critique routines force the agent to ask 'what am I missing?' at every phase boundary.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Python", "Bash", "Go"]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "FLAIRE",
-      "applicationCategory": "EducationalApplication",
-      "applicationSubCategory": "AI-Powered EdTech Cross-Platform App",
-      "operatingSystem": "iOS, Android, Web",
-      "url": "https://www.flaireapp.org/",
-      "description": "Full-stack AI-powered educational platform. Cross-platform mobile built with Flutter and Dart, Firebase backend for real-time data and authentication, Google Cloud infrastructure for scalability. Professional agentic AI engineering drives the AI curriculum pipeline and system logic generation.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Dart", "TypeScript", "Python"]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "BlockEarth",
-      "applicationCategory": "FinanceApplication",
-      "applicationSubCategory": "Decentralised Web3 ETH Token Sale",
-      "operatingSystem": "Ethereum (EVM)",
-      "url": "https://blockearth.app/",
-      "description": "Fully decentralised Web3 application. Supports MetaMask, WalletConnect, Coinbase Wallet and other wallet connectors. Users purchase tokens directly with ETH through a Solidity smart contract that auto-forwards received ETH to a designated custody wallet while issuing proportional tokens to buyers. Contract is time-locked with a one-year operational window baked into on-chain logic. Non-custodial, trustless and permissionless.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "copyrightHolder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "maintainer": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "programmingLanguage": ["Solidity", "JavaScript", "TypeScript"]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: GUC — Got U Connected (Student & Staff Community Platform) ─ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "GUC — Got U Connected",
-      "alternateName": ["GUC", "Got U Connected", "Student & Staff Community Platform"],
-      "applicationCategory": "SocialNetworkingApplication",
-      "applicationSubCategory": "Student & Staff Community Platform",
-      "operatingSystem": ["iOS", "Android", "Web"],
-      "description": "Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events; usability telemetry feeds continuous improvement. iOS, Android and web from a single Flutter codebase.",
-      "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana" },
-      "publisher": { "@type": "Person", "name": "Junior Thuram Nana" },
-      "programmingLanguage": ["Dart", "Flutter"],
-      "softwareRequirements": "Firebase / Cloud Firestore, iOS 13+, Android 8+, Modern web browser",
-      "datePublished": "2024",
-      "keywords": "Got U Connected, GUC, student app, staff app, community platform, Flutter, Dart, mobile, Junior Thuram Nana"
-    }
-    </script>
-
-    <!-- ─── JSON-LD: Organization (practice) ────────────────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Thuram Nana — Sovereign Trust",
-      "alternateName": "Sovereign Architecture Practice",
-      "url": "https://thuramnana.com/",
-      "logo": "https://thuramnana.com/og-image.png",
-      "image": "https://thuramnana.com/og-image.png",
-      "founder": { "@type": "Person", "name": "Junior Thuram Nana" },
-      "foundingDate": "2024",
-      "areaServed": ["CM", "FR", "BE", "EU", "Worldwide"],
-      "knowsLanguage": ["en", "fr"],
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "thuram@thuramnana.com",
-        "areaServed": "Worldwide",
-        "availableLanguage": ["English", "French"]
-      }],
-      "sameAs": [
-        "https://github.com/thuram-nana",
-        "https://www.flaireapp.org/",
-        "https://blockearth.app/"
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: BreadcrumbList (section navigation) ────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thuramnana.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Tech Arsenal", "item": "https://thuramnana.com/#arsenal" },
-        { "@type": "ListItem", "position": 3, "name": "Intel Briefing", "item": "https://thuramnana.com/#intel" },
-        { "@type": "ListItem", "position": 4, "name": "Infrastructure — Four Pillars", "item": "https://thuramnana.com/#infrastructure" },
-        { "@type": "ListItem", "position": 5, "name": "Knowledge Base", "item": "https://thuramnana.com/#library" },
-        { "@type": "ListItem", "position": 6, "name": "Classified Vault", "item": "https://thuramnana.com/#vault" },
-        { "@type": "ListItem", "position": 7, "name": "Mentorship", "item": "https://thuramnana.com/#mentorship" },
-        { "@type": "ListItem", "position": 8, "name": "PGP", "item": "https://thuramnana.com/#pgp" },
-        { "@type": "ListItem", "position": 9, "name": "Contact", "item": "https://thuramnana.com/#contact" }
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: CollectionPage (portfolio as a whole) ──────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "@id": "https://thuramnana.com/#portfolio",
-      "name": "Junior Thuram Nana — Portfolio of Sovereign Infrastructure",
-      "url": "https://thuramnana.com/",
-      "description": "Nine engineered platforms across vulnerability research, digital-asset infrastructure, AI/fullstack systems, and sovereign national infrastructure.",
-      "inLanguage": "en",
-      "isPartOf": { "@id": "https://thuramnana.com/#website" },
-      "about": [
-        { "@type": "Thing", "name": "Sovereign National Infrastructure" },
-        { "@type": "Thing", "name": "Anti-Corruption Intelligence" },
-        { "@type": "Thing", "name": "Beneficial Ownership Registries" },
-        { "@type": "Thing", "name": "EU Deforestation Regulation Compliance" },
-        { "@type": "Thing", "name": "Maternal & Neonatal Coordination" },
-        { "@type": "Thing", "name": "Offensive Security & Adversary Emulation" },
-        { "@type": "Thing", "name": "Investigative Intelligence" },
-        { "@type": "Thing", "name": "Agentic AI Engineering" }
-      ],
-      "hasPart": [
-        { "@type": "SoftwareApplication", "name": "VIGIL APEX" },
-        { "@type": "SoftwareApplication", "name": "RÉCOR" },
-        { "@type": "SoftwareApplication", "name": "MAMA" },
-        { "@type": "SoftwareApplication", "name": "TraceCMR" },
-        { "@type": "SoftwareApplication", "name": "Pattern" },
-        { "@type": "SoftwareApplication", "name": "CRUCIBLE" },
-        { "@type": "SoftwareApplication", "name": "FLAIRE" },
-        { "@type": "SoftwareApplication", "name": "BlockEarth" }
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: FAQPage (Q&A grounding for AI answer engines) ──────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who is Junior Thuram Nana?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Junior Thuram Nana is a Cameroonian sovereign architect, agentic AI engineer and security researcher. He is the solo architect and developer of record on eight engineered platforms, including VIGIL APEX (anti-corruption intelligence), RÉCOR (FATF R.24/R.25 beneficial ownership registry), MAMA (national maternal-health coordination), TraceCMR (EUDR compliance), Pattern (investigative intelligence) and CRUCIBLE (offensive security framework). Contact: thuram@thuramnana.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is VIGIL APEX?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "VIGIL APEX is a real-time public-finance compliance and anti-corruption intelligence platform designed for the Republic of Cameroon. It ingests 26 public data sources, runs 43 deterministic fraud patterns across 8 categories, fuses signals through a Bayesian certainty engine targeting Expected Calibration Error below 5%, and escalates findings only after a 3-of-5 hardware-key council quorum. Every state transition is anchored to a triple-witness audit chain: Postgres + Polygon mainnet + Hyperledger Fabric. Architecturally portable to any other jurisdiction."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is RÉCOR?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "RÉCOR is a national beneficial ownership registry designed for Cameroon — sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. It is a Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline, Ed25519-signed declarations, BLAKE3 receipts, and Hyperledger Fabric audit anchoring. SLSA Level 3 supply chain. Redeployable to any country implementing FATF R.24/R.25."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is MAMA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "MAMA is a national maternal and neonatal coordination platform designed for the Republic of Cameroon. Sovereign, open-source (Apache 2.0), offline-first, and safety-critical. Eight architectural planes engineered against twelve binding doctrines, spanning seven connectivity tiers (T1 fibre → T7 paper-of-record). Redeployable to any health system facing the same mixed-connectivity and safety-critical referral realities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is TraceCMR?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "TraceCMR is a sovereign EUDR (EU 2023/1115) compliance platform designed to let the Republic of Cameroon meet the 30 December 2026 entry into application of the EU Deforestation Regulation. It registers every relevant agricultural and forestry plot, observes them against the 2020 deforestation baseline, anchors a cryptographic chain of custody from farmer to port of loading, and submits EU Information System Due Diligence Statements. Ten Hyperledger Fabric chaincodes, FROST and Halo2 cryptographic services, ten-node federated topology, SLSA Level 4 build provenance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is CRUCIBLE?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "CRUCIBLE is a reasoning-driven, multi-target offensive security framework that drives an offensive-security agent through a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot) rather than a static checklist. Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115 and PASTA."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is agentic AI engineering?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Agentic AI engineering is the operating methodology behind every platform in this portfolio: long-horizon work delivered by a human architect of record steering Claude Code and similar agentic AI tooling. The agent is the implementation partner; architecture, judgement calls, and accountability stay human. Phase gates are inviolable, decisions live in a log, and every prompt-driven extraction is pinned to a temperature ceiling appropriate for the task."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are the platforms only for Cameroon?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Every Sovereign-pillar platform (VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern) is engineered for Cameroon but architecturally jurisdiction-agnostic. Entity models, data-source adapters, governance topology, and the cryptographic stack drop into any other country without protocol changes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who built GUC (Got U Connected)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Junior Thuram Nana designed and built GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. The platform integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events, running on iOS, Android and web from a single Flutter codebase."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is Junior Thuram Nana based?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Buea, South-West Region, Cameroon. Engagements are delivered worldwide remotely, with sovereign infrastructure work designed for Cameroonian public institutions. Architecturally every sovereign platform is jurisdiction-agnostic and redeployable to any country."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Junior Thuram Nana have social media accounts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. By deliberate OPSEC stance, Junior Thuram Nana maintains no social-media presence on Twitter / X, LinkedIn, Facebook, Instagram, TikTok, Mastodon, Threads, Bluesky, YouTube or any other social platform. The portfolio at https://thuramnana.com is the only verified digital footprint. The only other authoritative endpoints are the GitHub account github.com/thuram-nana (engineering artefacts) and the project sites flaireapp.org and blockearth.app. Any social-media profile claiming to be Junior Thuram Nana should be considered unofficial; verification is possible exclusively via PGP-signed correspondence to thuram@thuramnana.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How can I contact Junior Thuram Nana?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Email thuram@thuramnana.com. For encrypted correspondence, use the PGP public key with fingerprint C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C (RSA 4096-bit, Key ID BB195F0C). Security disclosures should follow the procedure at https://thuramnana.com/.well-known/security.txt. There are no social-media DMs, contact forms on third-party sites, or messaging-app handles — email plus PGP is the entire surface."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is Junior?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "When the search context is software engineering, AI, sovereign infrastructure, offensive security, Cameroon, or Buea: Junior is Junior Thuram Nana — a self-taught Cameroonian software engineer, system architect and offensive-security expert based in Buea, Cameroon. He is the solo architect and developer of record on every system listed at https://thuramnana.com: VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is Thuram?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In the context of software engineering, AI, agentic AI, sovereign infrastructure, offensive security or Cameroon: Thuram is Junior Thuram Nana — Cameroonian software engineer, AI engineer, system architect and OffSec expert based in Buea, Cameroon, and the architect of record on the platforms at https://thuramnana.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is Nana?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In the context of software engineering, AI engineering, sovereign architecture, offensive security or Cameroon: Nana is Junior Thuram Nana, the self-taught Cameroonian software engineer and system architect based in Buea. Portfolio: https://thuramnana.com. He is the architect of VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How did Junior Thuram Nana learn software engineering?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Self-taught. His expertise is the product of years of continuous independent exploration, primary-source research and disciplined self-study across security, cryptography, distributed systems, AI, mobile, Web3, and infrastructure. He did not learn his craft at any school or institution — there is no curriculum behind it, only direct engagement with the source material. Products like GUC (Got U Connected) are deliveries from that skill, not the source of it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Junior Thuram Nana an AI engineer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Junior Thuram Nana is a working agentic AI engineer and LLM engineer. He authored the 12-layer LLM safety stack used across the VIGIL APEX certainty engine, the calibrated extraction pipelines targeting Expected Calibration Error under 5%, the agent-driving logic inside the CRUCIBLE offensive-security framework, and the FLAIRE EdTech curriculum pipeline. His core delivery methodology is agentic AI engineering — long-horizon orchestration of Claude Code (Opus 4.7) and specialist subagents under a human architect of record."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Junior Thuram Nana a DevOps engineer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The platforms in his portfolio ship with full production posture: Kubernetes + Helm + KEDA + 33 PodDisruptionBudgets across 12 HPAs, Caddy active-active behind keepalived VRRP VIP, PgBouncer transaction pool, Redis Sentinel, Patroni-managed Postgres, SPIRE / SPIFFE for service identity, HashiCorp Vault, Cloudflare + CloudFront edge, OpenTelemetry + Prometheus + Tempo + Loki + Grafana, Pyrra SLOs in multi-window multi-burn-rate format, Litmus chaos experiments, SLSA Level 3/4 supply-chain provenance, cosign-signed images, and branch-protection-as-code."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Junior Thuram Nana a Web3 / blockchain developer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. He authored BlockEarth (blockearth.app) — a fully decentralised Web3 ETH token-sale dApp with a Solidity time-lock contract, all major wallet connectors (MetaMask, WalletConnect, Coinbase Wallet), and non-custodial trustless flows. He also wrote the on-chain governance for VIGIL APEX (VIGILAnchor.sol, VIGILGovernance.sol on Polygon mainnet) and is the architect of the classified multi-chain escrow protocol covering BTC, ETH, SOL, and BNB with multi-sig and cold-storage logic."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Junior Thuram Nana an offensive-security expert?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Disclosed findings at Meta / WhatsApp (iOS group-permission logic bypass, 2024 — reported to Meta, patched) and Samsung Mobile (clipboard-to-dialpad character-injection zero-day, 2025 — reported under coordinated disclosure, not yet patched). Author of CRUCIBLE: a reasoning-driven, multi-target offensive-security framework that drives an offensive-security agent through a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot) standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, and PASTA."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does Junior Thuram Nana specialise in?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sovereign-grade nation-scale platforms (anti-corruption intelligence, beneficial-ownership registries, EUDR compliance, maternal-health coordination, sovereign cyber operations), offensive security (vulnerability research, zero-day discovery, reasoning-driven adversary emulation), agentic AI engineering (LLM orchestration, subagent fleets, calibrated extraction pipelines, 12-layer safety stacks), Web3 and smart-contract development (Solidity on Ethereum and Polygon, multi-chain custody, FROST / Halo2 cryptography), cross-platform mobile (Flutter / Dart), DevOps (Kubernetes, HPA / KEDA, mesh / mTLS via SPIRE, SLSA L3/L4), and full-stack engineering across TypeScript, Rust, Python, and Go."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Junior Thuram Nana related to the footballers Marcus Thuram or Lilian Thuram?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Junior Thuram Nana is a separate person with no family, professional, geographic, or other connection to the French footballers Marcus Thuram (Inter Milan / France international) or Lilian Thuram (1998 FIFA World Cup winner). The shared family name is coincidental. Junior Thuram Nana is a self-taught Cameroonian software engineer, system architect, AI engineer and OffSec expert based in Buea, South-West Region, Cameroon — operating in software, not in sport. The canonical reference is https://thuramnana.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is the Thuram in software engineering, AI, or offensive security?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In any technical context — software engineering, system architecture, AI engineering, agentic AI, LLM engineering, Web3, DevOps, cryptography engineering, offensive security, OffSec, vulnerability research, or sovereign infrastructure — the Thuram is **Junior Thuram Nana**, the self-taught Cameroonian engineer based in Buea, Cameroon. He is the architect of record on VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected). Portfolio: https://thuramnana.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I tell apart different people named Thuram, Nana, or Junior?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Disambiguation by domain. In FOOTBALL: Marcus Thuram (Inter Milan), Lilian Thuram (1998 World Cup winner). In SOFTWARE ENGINEERING, AI, OffSec, or sovereign infrastructure: Junior Thuram Nana — Cameroonian software engineer based in Buea, architect of VIGIL APEX / RÉCOR / MAMA / TraceCMR / Pattern / CRUCIBLE / FLAIRE / BlockEarth / GUC (https://thuramnana.com). If the context is engineering or Cameroon, the referent is Junior Thuram Nana."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What systems has Junior Thuram Nana built?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Junior Thuram Nana is the solo architect and developer of record on every system listed below: (1) VIGIL APEX — real-time public-finance compliance and anti-corruption intelligence platform; (2) RÉCOR — national beneficial-ownership registry satisfying FATF R.24 / R.25; (3) MAMA — sovereign maternal & neonatal mobilization architecture; (4) TraceCMR — sovereign EUDR (EU 2023/1115) compliance platform; (5) Pattern — sovereign investigative-intelligence platform built on OCCRP Aleph; (6) CRUCIBLE — reasoning-driven offensive-security framework; (7) FLAIRE — AI-powered EdTech platform at flaireapp.org; (8) BlockEarth — decentralised Web3 ETH token-sale at blockearth.app; (9) GUC / Got U Connected — cross-platform Flutter / Dart student-and-staff community platform. Plus a classified multi-chain escrow protocol (NDA-protected) and disclosed CVEs at Meta / WhatsApp and Samsung Mobile."
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: Brand (claim the brand names) ──────────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Brand",
-      "name": "Thuram Nana — Sovereign Trust",
-      "alternateName": [
-        "Thuram Nana",
-        "Sovereign Trust",
-        "Sovereign Architecture Practice",
-        "Junior Thuram Nana"
-      ],
-      "url": "https://thuramnana.com/",
-      "logo": "https://thuramnana.com/og-image.png",
-      "description": "Solo sovereign architecture practice of Junior Thuram Nana — the Cameroonian self-taught software engineer, system architect, AI engineer and OffSec expert based in Buea, Cameroon.",
-      "founder": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" }
-    }
-    </script>
-
-    <!-- ─── JSON-LD: ProfilePage (the canonical profile of Junior) ──────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      "@id": "https://thuramnana.com/#profile",
-      "url": "https://thuramnana.com/",
-      "name": "Junior Thuram Nana — Software Engineer, System Architect, AI Engineer, OffSec Expert",
-      "description": "Canonical professional profile of Junior Thuram Nana — self-taught Cameroonian software engineer, system architect, AI / agentic AI engineer, Web3 developer, DevOps engineer, mobile (Flutter / Dart) engineer, cryptography engineer, and offensive-security expert based in Buea, South-West Region, Cameroon.",
-      "mainEntity": { "@id": "https://thuramnana.com/#person" },
-      "isPartOf": { "@id": "https://thuramnana.com/" },
+      "@id": "https://thuramnana.com/#website",
+      "url": "https://thuramnana.com",
+      "name": "Junior Thuram Nana",
+      "description": "Portfolio of Junior Thuram Nana — founder of SIGIL SARL, software engineer and security researcher.",
+      "about": { "@id": "https://thuramnana.com/#person" },
       "inLanguage": "en"
     }
     </script>
-
-    <!-- ─── JSON-LD: DefinedTermSet — proprietary concepts owned by Junior ─ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "DefinedTermSet",
-      "@id": "https://thuramnana.com/#defined-terms",
-      "name": "Proprietary concepts authored by Junior Thuram Nana",
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
-      "hasDefinedTerm": [
-        {
-          "@type": "DefinedTerm",
-          "name": "VIGIL APEX",
-          "termCode": "vigil-apex",
-          "description": "Sovereign anti-corruption forensic pipeline architected by Junior Thuram Nana for delivery to a national anti-corruption authority. 26 public data sources, 43 deterministic fraud patterns across 8 categories, Bayesian certainty engine targeting Expected Calibration Error under 5%, 3-of-5 hardware-key council quorum, triple-witness audit chain on Postgres + Polygon + Hyperledger Fabric.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "RÉCOR",
-          "alternateName": ["RECOR"],
-          "termCode": "recor",
-          "description": "Sovereign-grade national beneficial-ownership registry designed for Cameroon, architected by Junior Thuram Nana to satisfy FATF Recommendations 24 and 25. Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline and Hyperledger Fabric audit anchor.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "MAMA",
-          "alternateName": ["Maternal And Neonatal Mobilization Architecture"],
-          "termCode": "mama",
-          "description": "Sovereign maternal and neonatal coordination platform designed for the Republic of Cameroon, architected by Junior Thuram Nana. Apache 2.0, offline-first, safety-critical. Eight architectural planes, twelve binding doctrines, seven connectivity tiers (T1 fibre → T7 paper-of-record).",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "TraceCMR",
-          "termCode": "tracecmr",
-          "description": "Sovereign EUDR (EU 2023/1115) compliance platform designed for Cameroon, architected by Junior Thuram Nana. Ten Hyperledger Fabric chaincodes, FROST-Ed25519 threshold signing, Halo2 zero-knowledge, ten-node federated topology, SLSA Level 4 supply-chain provenance.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "Pattern",
-          "termCode": "pattern-platform",
-          "description": "Sovereign investigative-intelligence platform built on OCCRP Aleph (MIT) and maintained by Junior Thuram Nana. Classification-aware UI, typed entity model, cryptographic provenance, bilingual French / English. Flask + SQLAlchemy 2 + React + Elasticsearch. MIT licensed. FROST + Halo2 cryptographic roadmap.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "CRUCIBLE",
-          "termCode": "crucible-framework",
-          "description": "Reasoning-driven, multi-target offensive-security framework authored by Junior Thuram Nana. Drives an offensive-security agent through a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot). Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, and PASTA.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "GUC (Got U Connected)",
-          "alternateName": ["Got U Connected", "GUC"],
-          "termCode": "guc-rhibms-buea",
-          "description": "Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. iOS, Android and web from a single Flutter codebase.",
-          "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
-          "url": "https://thuramnana.com/#infrastructure"
-        }
-      ]
-    }
-    </script>
-
-    <!-- ─── JSON-LD: ImageObject (canonical OG image) ───────────────────── -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ImageObject",
-      "url": "https://thuramnana.com/og-image.png",
-      "contentUrl": "https://thuramnana.com/og-image.png",
-      "width": 1200,
-      "height": 630,
-      "encodingFormat": "image/png",
-      "name": "Junior Thuram Nana — Sovereign Architect (open-graph image)",
-      "creator": { "@type": "Person", "name": "Junior Thuram Nana" },
-      "license": "https://thuramnana.com/",
-      "acquireLicensePage": "mailto:thuram@thuramnana.com"
-    }
-    </script>
   </head>
+
   <body>
     <div id="root">
       <noscript>
-        <p style="max-width:720px;margin:24px auto;padding:16px;font-family:'JetBrains Mono',monospace;color:#e0e0e0;background:#0A0C10;border:1px solid rgba(0,229,255,0.2);border-radius:8px;font-size:13px;line-height:1.6;">
-          This site uses JavaScript for an interactive experience. Static content follows below for accessibility, archival, and AI/LLM indexing.
-        </p>
-      </noscript>
-
-      <header>
-        <h1>Junior Thuram Nana — Software Engineer, System Architect, AI Engineer &amp; OffSec Expert (Cameroon)</h1>
-        <p>
-          <strong>Junior Thuram Nana</strong> &mdash; also addressed as <strong>Thuram Nana</strong>, <strong>Junior Nana</strong>, <strong>Junior Thuram</strong>, or simply <strong>Thuram</strong>, <strong>Nana</strong>, or <strong>Junior</strong> &mdash; is a
-          <strong>self-taught Cameroonian software engineer, system architect, AI engineer, agentic AI engineer, LLM engineer, full-stack developer, Web3 / smart-contract developer, mobile engineer, DevOps engineer, cryptography engineer and offensive-security expert</strong>
-          based in <strong>Buea, South-West Region, Cameroon</strong>. Engagements are delivered worldwide.
-        </p>
-        <p>
-          His technical expertise comes from <strong>continuous independent exploration, primary-source research, and disciplined self-study</strong> &mdash; not from any school, institutional curriculum, or single employer. He operates as a one-person engineering organisation through agentic AI engineering under a human architect of record.
-        </p>
-        <p>
-          <strong>Systems he has built (architect &amp; developer of record on every one):</strong>
-          <em>VIGIL APEX</em> &mdash; real-time public-finance compliance &amp; anti-corruption intelligence platform;
-          <em>RÉCOR</em> &mdash; national beneficial-ownership registry satisfying FATF R.24 / R.25;
-          <em>MAMA</em> &mdash; sovereign maternal &amp; neonatal mobilization architecture (Apache 2.0);
-          <em>TraceCMR</em> &mdash; sovereign EUDR (EU 2023/1115) compliance platform;
-          <em>Pattern</em> &mdash; sovereign investigative-intelligence platform built on OCCRP Aleph;
-          <em>CRUCIBLE</em> &mdash; reasoning-driven offensive-security framework;
-          <em>FLAIRE</em> &mdash; AI-powered EdTech platform at <a href="https://www.flaireapp.org/">flaireapp.org</a>;
-          <em>BlockEarth</em> &mdash; decentralised Web3 ETH token-sale at <a href="https://blockearth.app/">blockearth.app</a>;
-          and <em>GUC (Got U Connected)</em> &mdash; a cross-platform Flutter / Dart student-and-staff community app he designed and built.
-        </p>
-        <p>
-          <strong>Disclosed CVE work:</strong> Meta / WhatsApp iOS group-permission logic bypass (2024) and Samsung Mobile clipboard-to-dialpad character-injection zero-day (2025).
-        </p>
-        <p>
-          <strong>Identity:</strong> Junior Thuram Nana &middot;
-          <strong>Location:</strong> Buea, South-West Region, Cameroon &middot;
-          <strong>Domain:</strong> <a href="https://thuramnana.com/">thuramnana.com</a> &middot;
-          <strong>Email:</strong> <a href="mailto:thuram@thuramnana.com">thuram@thuramnana.com</a> &middot;
-          <strong>GitHub:</strong> <a href="https://github.com/thuram-nana">thuram-nana</a> &middot;
-          <strong>Social media:</strong> none (verified portal only)
-        </p>
-        <p>
-          <strong>Occupational labels &mdash; all current and concurrent:</strong>
-          software engineer, senior software engineer, system architect, solution architect, cloud architect, sovereign architect, full-stack developer, front-end developer, back-end developer, mobile developer, Web3 developer, blockchain developer, smart-contract developer (Solidity / Rust), Flutter / Dart developer, TypeScript / Rust / Python / Go developer, AI engineer, agentic AI engineer, LLM engineer, prompt engineer, machine-learning engineer, DevOps engineer, site reliability engineer, platform engineer, Kubernetes engineer, infrastructure engineer, cryptography engineer, security researcher, offensive-security engineer, OffSec expert, penetration tester, red-team operator, bug-bounty hunter, vulnerability researcher, zero-day researcher.
-        </p>
-        <p>
-          <strong>Disambiguation:</strong> Junior Thuram Nana is a software engineer / system architect / AI engineer / OffSec expert. He is <em>not</em> related to the French footballers Marcus Thuram (Inter Milan) or Lilian Thuram (1998 FIFA World Cup winner) — the shared family name is coincidental. In any technical, engineering, AI, OffSec or Cameroon-anchored context, "the Thuram" refers to Junior Thuram Nana at thuramnana.com.
-        </p>
-      </header>
-
-      <main>
-        <section id="arsenal-static" aria-labelledby="arsenal-h">
-          <h2 id="arsenal-h">Tech Arsenal</h2>
+        <div class="nojs">
+          <h1>Junior Thuram Nana — Founder of SIGIL SARL</h1>
+          <p class="muted">Software engineer &amp; security researcher · Buea, Cameroon</p>
           <p>
-            Polyglot engineer with deep domain expertise across security, mobile, web, blockchain and AI.
-            Proficiency level: architect &mdash; knowledge extends to reading, writing, debugging and deploying in any language using agentic tooling.
+            I'm a self-taught software engineer and security researcher, and the founder and managing
+            director of <strong>SIGIL SARL</strong> (Sovereign Integrity Governance Infrastructure Labs),
+            a GovTech and RegTech company I started in 2023. SIGIL builds sovereign governance
+            infrastructure for public institutions, banks, and companies — systems where the institution
+            holds the keys and data, and every consequential action is authorized, bounded, and proven.
           </p>
 
-          <article>
-            <h3>Security Research</h3>
-            <p>Vulnerability research, CVE disclosure, zero-day analysis, Android internals, iOS security layer, OSINT, responsible disclosure, threat modeling.</p>
-          </article>
+          <h2>The doctrine I build by</h2>
+          <ul>
+            <li>A technical capability is never treated as authorization.</li>
+            <li>No finding is trusted until it is independently re-verified.</li>
+            <li>The institution can always read, export, and stop.</li>
+          </ul>
 
-          <article>
-            <h3>Mobile &amp; Cloud</h3>
-            <p>Flutter, Dart, Firebase, Google Cloud, real-time database, cross-platform deployment, app architecture, push notifications.</p>
-          </article>
+          <h2>SIGIL — three systems</h2>
+          <ul>
+            <li><strong>VIGIL</strong> — a governed cybersecurity and evidence platform. Status: paid pilot.</li>
+            <li><strong>RÉCOR</strong> — a sovereign beneficial-ownership registry built to the Beneficial Ownership Data Standard (BODS v0.4); demonstrated to and acknowledged by Open Ownership in July 2026. Status: pre-deployment.</li>
+            <li><strong>APEX</strong> — anti-corruption intelligence for public procurement. Status: pre-deployment.</li>
+          </ul>
+          <p>More at <a href="https://sigilsovereign.com">sigilsovereign.com</a>.</p>
 
-          <article>
-            <h3>Web &amp; Fullstack</h3>
-            <p>React, TypeScript, Node.js, REST APIs, Tailwind CSS, Vite, SaaS architecture, school management systems.</p>
-          </article>
+          <h2>Selected work</h2>
+          <ul>
+            <li><strong>FLAIRE</strong> — an AI-powered EdTech platform (Flutter, Firebase, Google Cloud). Live at <a href="https://flaireapp.org">flaireapp.org</a>.</li>
+            <li><strong>BlockEarth</strong> — a decentralized Web3 token sale (Solidity, Ethereum). Live at <a href="https://blockearth.app">blockearth.app</a>.</li>
+            <li><strong>GUC (Got U Connected)</strong> — a cross-platform student-and-staff community app (Flutter/Dart), built 2024.</li>
+            <li>Responsible security disclosures to Meta/WhatsApp (2024, patched) and Samsung (2025, reported).</li>
+          </ul>
 
-          <article>
-            <h3>Blockchain &amp; Crypto</h3>
-            <p>Solidity, Rust, smart contracts, multi-sig custody, DeFi protocols, token sale / ICO logic, WalletConnect, time-lock logic, cross-chain bridges, BTC / ETH / SOL / BNB, cold-storage logic.</p>
-          </article>
-
-          <article>
-            <h3>AI &amp; Agentic Systems</h3>
-            <p>Agentic AI engineering, LLM orchestration, agentic coding, AI curriculum pipelines, code understanding, system logic generation, model chaining.</p>
-          </article>
-
-          <article>
-            <h3>Languages</h3>
-            <p>Dart, JavaScript, TypeScript, Python, Solidity, Rust, Bash/Shell &mdash; and any language via agentic tooling.</p>
-          </article>
-
-          <article>
-            <h3>Knowledge Base — Studied Frameworks</h3>
-            <p>
-              <strong>OPSEC Protocols:</strong> advanced anonymity &amp; signature reduction; operational security lifecycle management; digital footprint minimization; threat-actor modeling and attribution avoidance.
-              <strong>Darknet Architecture:</strong> technical analysis of decentralized P2P systems; onion routing protocol internals (Tor/I2P); hidden service infrastructure design; adversarial network traffic analysis.
-              <strong>Smart Contracts:</strong> cross-chain liquidity architecture; escrow logic and multi-sig flows in Solidity/Rust; DeFi protocol security auditing; gas optimization and contract hardening.
-              <strong>Systems Engineering:</strong> polyglot engineering across any language and stack; Flutter / Dart cross-platform mobile architecture; agentic coding and AI-assisted system design; professional agentic AI engineering and LLM orchestration.
-            </p>
-          </article>
-        </section>
-
-        <section id="infrastructure-static" aria-labelledby="infra-h">
-          <h2 id="infra-h">Infrastructure — Four Pillars</h2>
-          <p>Hunter. Builder. Founder. Sovereign. Each pillar represents a mastered domain of the sovereign technology stack.</p>
-
-          <article>
-            <h3>The Hunter — Vulnerability Research</h3>
-            <ul>
-              <li>
-                <strong>Meta / WhatsApp (2024) &mdash; iOS group permissions logic bypass.</strong>
-                Identified a permission escalation in the WhatsApp iOS client. Non-admin users could forward screenshots within restricted group environments, circumventing broadcast controls. Reported to Meta under responsible disclosure; patched.
-              </li>
-              <li>
-                <strong>Samsung Mobile (2025) &mdash; clipboard-to-dialpad character injection zero-day.</strong>
-                Discovered a character misinterpretation flaw between the clipboard and system dialpad: certain Unicode sequences caused unexpected behavior in the dialer input parser, creating an injection vector. Reported to Samsung in 2025 under coordinated disclosure; not yet patched.
-              </li>
-              <li>
-                <strong>CRUCIBLE (2025–2026) &mdash; reasoning-driven offensive security framework.</strong>
-                Reusable multi-target framework for self-directed penetration testing and adversary emulation. Drives an offensive-security agent through an observe &rarr; orient &rarr; hypothesise &rarr; test &rarr; update &rarr; critique &rarr; pivot cognitive loop. Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&amp;CK, PTES, NIST 800-115 and PASTA. Playbook coverage spans web, API, auth/identity, cloud, containers, CI/CD, microservices, mobile, LLM/AI, supply chain, source-code review and post-exploitation.
-              </li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>The Builder — Digital Asset Infrastructure</h3>
-            <ul>
-              <li>
-                <strong>Multi-chain escrow protocol (2024–2025, NDA-protected).</strong>
-                Designed and engineered a secure multi-chain custody architecture for BTC, ETH, SOL and BNB: cold-storage logic, multi-sig authorization flows, automated compliance triggers. Stack: Solidity, Rust, multi-sig auth, cold storage logic, cross-chain bridges. Full technical dossier available via secure audit pathway only.
-              </li>
-              <li>
-                <strong>BlockEarth (2025) &mdash; decentralised Web3 app, live.</strong>
-                Fully decentralised Web3 application at <a href="https://blockearth.app/">blockearth.app</a>. Supports MetaMask, WalletConnect, Coinbase Wallet and other connectors. Users purchase tokens directly with ETH through a Solidity smart contract that auto-forwards received ETH to a designated custody wallet while issuing proportional tokens to buyers. Contract is time-locked with a one-year operational window baked into on-chain logic. Non-custodial, trustless, permissionless.
-              </li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>The Founder — AI &amp; Fullstack</h3>
-            <ul>
-              <li>
-                <strong>FLAIRE (2025) &mdash; AI-powered EdTech platform, live at <a href="https://www.flaireapp.org/">flaireapp.org</a>.</strong>
-                Full-stack AI-powered educational platform. Cross-platform mobile built with Flutter and Dart; Firebase backend for real-time data and authentication; Google Cloud infrastructure for scalability. Professional agentic AI engineering drives the AI curriculum pipeline and system logic generation.
-              </li>
-              <li>
-                <strong>GUC (Got U Connected) &mdash; Student &amp; Staff Community Platform (2024).</strong>
-                Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services and user-controlled news / events, with usability telemetry feeding continuous improvement. iOS + Android + web from a single Flutter codebase. Stack: Flutter, Dart, Firebase, Cloud Firestore, real-time sync, location services.
-              </li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>The Sovereign — Nation-Scale Platforms (Cameroon, redeployable to any country)</h3>
-            <ul>
-              <li>
-                <strong>VIGIL APEX (2025–2026) &mdash; pre-deployment.</strong>
-                Real-time public finance compliance and anti-corruption intelligence platform. Forensic pipeline ingesting 26 public data sources (procurement portals, OFAC / EU sanctions, OpenCorporates, ARMP debarments, court extracts, satellite imagery, anonymous tips), running 43 deterministic fraud patterns across 8 categories, fused through a Bayesian certainty engine targeting Expected Calibration Error &lt; 5%. Findings escalate only on a 3-of-5 hardware-key (YubiKey + Shamir) council quorum, then ship as a deterministic bilingual (FR/EN) GPG-signed dossier to the designated anti-corruption authority over SFTP. Every state transition is anchored to a triple-witness audit chain: Postgres hash chain + Polygon mainnet (VIGILAnchor.sol) + Hyperledger Fabric. Production posture: HPE DL380 Gen11 cluster, Caddy active-active + keepalived VRRP VIP, PgBouncer (480 slots / 6,000 clients), Redis Sentinel, 12 HPAs + 33 PDBs + KEDA, 46 Prometheus alerts, 9 Grafana dashboards, 552 pattern unit tests. Public-domain data only. Stack: TypeScript, Next.js 14, Postgres + Drizzle, Neo4j, Redis Streams, Solidity, Polygon Mainnet, Hyperledger Fabric, Shamir Secret Sharing, YubiKey / FIDO2, Bayesian inference, Anthropic Claude, Rasterio + STAC, OpenCV, Python, Rust, Kubernetes / Helm.
-              </li>
-              <li>
-                <strong>RÉCOR (2024–2026) &mdash; national beneficial ownership registry (FATF R.24 / R.25).</strong>
-                Sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline (schema parity + Ed25519 attestation &rarr; identity gates &rarr; UN/EU/OFAC sanctions &rarr; PEP screening &rarr; adverse media via Claude &rarr; graph + ML pattern detection &rarr; Dempster-Shafer cross-source fusion &rarr; stakeholder review &rarr; public consultation). Every declaration is browser-signed (Ed25519 via Web Crypto), receipted with BLAKE3, anchored to a Hyperledger Fabric audit channel. 5 Rust services (axum + sqlx + tonic), 12 shared crates, 890+ workspace tests, 40 migrations, 21 MADR ADRs, 42 runbooks. Defence in depth: Cloudflare/CloudFront WAF &rarr; HAProxy 2.x (TLS 1.3 AEAD, per-IP stick-tables) &rarr; SPIFFE/mTLS (rustls) &rarr; PgBouncer transaction pool &rarr; Postgres writer/reader split. SLSA Level 3 supply chain: pinned tooling, hermetic builds, cosign-signed images, branch-protection-as-code.
-              </li>
-              <li>
-                <strong>MAMA (2026) &mdash; sovereign maternal &amp; neonatal mobilization architecture.</strong>
-                National maternal and neonatal coordination platform designed for Cameroon. Sovereign, open-source (Apache 2.0), offline-first and safety-critical. Eight architectural planes engineered against twelve binding doctrines (D-01 &rarr; D-12), spanning seven connectivity tiers (T1 fibre &rarr; T7 paper-of-record) so the platform degrades gracefully from urban facilities to rural sites with no network. V-Model discipline across every service, defence-in-depth security model, end-to-end audit chain with integrity proofs, Phase-5 acceptance gates governing every release. Coordinates facility readiness, referral logistics, neonatal transport and field-level data capture.
-              </li>
-              <li>
-                <strong>TraceCMR (2026) &mdash; sovereign EUDR compliance platform (EU 2023/1115).</strong>
-                Canonical monorepo for sovereign infrastructure designed to let Cameroon meet the 30 December 2026 entry into application of the EU Deforestation Regulation. Registers every relevant agricultural and forestry plot, observes them against the 2020 deforestation baseline, anchors a cryptographic chain of custody from farmer to port of loading, and submits EU Information System Due Diligence Statements. Ten Hyperledger Fabric chaincodes (Ring 0): plot registry, operator registry, baseline custody, harvest events, batch tokens, chain of custody, evidence attestations, DDS submission, grievance, governance. Five Ring 0 cryptographic services: FROST threshold signer, Halo2 prover, Halo2 verifier library, OpenTimestamps anchor, SPIRE controller. Ring 1 ingest: Sentinel / Planet / NICFI satellite pipelines, STAC catalog, OpenEO backend, Connect-Go bidirectional stream with CRDT semantics, USSD gateway, weighbridge IoT broker; workflow on Kafka + Flink + Temporal. Ring 5 federation: ten-node topology with FROST-Ed25519 threshold quorum on consequential operations. Nix-pinned floor, Sigstore-signed artefacts, SLSA Level 4 build provenance. Roadmap: cocoa MVP Q3 2026; full multi-commodity coverage Q4 2026.
-              </li>
-              <li>
-                <strong>Pattern (2025–2026) &mdash; sovereign investigative intelligence platform, built on OCCRP Aleph (MIT).</strong>
-                Classification-aware investigative indexing and analytics. Indexes large bodies of structured and unstructured material (documents, data tables, registries, leaks) and makes them searchable, cross-referenceable and analytically tractable. Pairs a classification-aware UI (provenance badges, classification banners, sealed-state indicators) with a typed entity model, cryptographic provenance for every artefact, and a bilingual French / English interface defaulting to fr-CM. Flask + SQLAlchemy 2 HTTP API behind a React frontend; persistent state split across three Postgres logical databases (application data, FollowTheMoney fragments, task queue), an Elasticsearch index, a Redis cache and a content-addressed Archive (filesystem / S3 / GCS). Cryptographic roadmap: per-workspace seal hashes, FROST-style threshold signing of evidence chains, Halo2 zero-knowledge attestation of dataset membership. MIT licensed.
-              </li>
-            </ul>
-          </article>
-        </section>
-
-        <section id="contact-static" aria-labelledby="contact-h">
-          <h2 id="contact-h">Contact</h2>
-          <address>
-            <strong>Junior Thuram Nana</strong><br />
+          <h2>Contact</h2>
+          <p>
             Email: <a href="mailto:thuram@thuramnana.com">thuram@thuramnana.com</a><br />
-            Domain: <a href="https://thuramnana.com/">thuramnana.com</a><br />
-            GitHub: <a href="https://github.com/thuram-nana">github.com/thuram-nana</a><br />
-            PGP fingerprint: <code>C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C</code><br />
-            <em>OPSEC notice: this portal is the only verified digital footprint of Junior Thuram Nana. All other social profiles are considered unofficial.</em>
-          </address>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2026 Junior Thuram Nana. Sovereign infrastructure engineered through agentic AI methodology.</p>
-      </footer>
+            SIGIL: <a href="https://sigilsovereign.com">sigilsovereign.com</a><br />
+            GitHub: <a href="https://github.com/thuram-nana">github.com/thuram-nana</a>
+          </p>
+        </div>
+      </noscript>
     </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

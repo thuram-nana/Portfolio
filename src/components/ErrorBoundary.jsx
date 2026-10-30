@@ -1,8 +1,7 @@
 import React from 'react';
 
-// Sovereign Architecture: Error Boundary Component
-// This component is used to catch JavaScript errors in child components
-// and display a fallback UI instead of crashing the entire app.
+// Error Boundary — catches render errors in child components and shows a
+// minimal fallback instead of crashing the whole page.
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
@@ -22,7 +21,14 @@ class ErrorBoundary extends React.Component {
     render() {
         if (this.state.hasError) {
             // Render fallback UI
-            return <h1>Something went wrong.</h1>;
+            return (
+                <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem', background: '#0A0C10', color: '#e0e0e0', fontFamily: 'Inter, system-ui, sans-serif', textAlign: 'center' }}>
+                    <div>
+                        <p style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>Something went wrong loading this page.</p>
+                        <a href="/" style={{ color: '#00E5FF' }}>Reload</a>
+                    </div>
+                </div>
+            );
         }
 
         return this.props.children; 

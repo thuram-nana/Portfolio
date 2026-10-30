@@ -1,8 +1,9 @@
 # Security contact for thuramnana.com — RFC 9116
-# Junior Thuram Nana — Sovereign Architect & Security Researcher
+# Junior Thuram Nana — software engineer and security researcher; founder of SIGIL SARL
 
 Contact: mailto:thuram@thuramnana.com
-Expires: 2027-05-27T21:33:47Z
+Expires: 2027-10-30T10:51:29Z
 Encryption: https://thuramnana.com/#pgp
+# PGP fingerprint: C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C
 Preferred-Languages: en, fr
 Canonical: https://thuramnana.com/.well-known/security.txt
