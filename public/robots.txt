@@ -1,5 +1,5 @@
-# robots.txt — thuramnana.com
-# Junior Thuram Nana — software engineer and security researcher; founder of SIGIL SARL
+# robots.txt for thuramnana.com
+# Junior Thuram Nana, software engineer and security researcher; founder of SIGIL SARL
 # Open-crawl policy: classical search and AI / LLM crawlers are welcome to index and cite.
 # Last updated: 2026-10-30
 

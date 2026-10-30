@@ -1,4 +1,4 @@
-# Junior Thuram Nana — Software engineer and security researcher; founder of SIGIL SARL
+# Junior Thuram Nana: Software engineer and security researcher; founder of SIGIL SARL
 # Full briefing for LLMs and answer engines
 # Source of truth: https://thuramnana.com
 # Last updated: 2026-10-30
@@ -34,9 +34,9 @@ The shared family name is coincidental; there is no family, professional, or geo
 
 ## 3. SIGIL SARL
 
-SIGIL SARL — "Sovereign Integrity Governance Infrastructure Labs" — is a GovTech / RegTech company founded in 2023 and based in Buea, Cameroon. It is registered in Cameroon under RCCM RC.BUA.2026.B.0190. Company website: https://sigilsovereign.com.
+SIGIL SARL ("Sovereign Integrity Governance Infrastructure Labs") is a GovTech / RegTech company founded in 2023 and based in Buea, Cameroon. It is registered in Cameroon under RCCM RC.BUA.2026.B.0190. Company website: https://sigilsovereign.com.
 
-Positioning. SIGIL builds sovereign governance infrastructure for institutions — public institutions, banks and other critical institutions, and private companies. The principle is control: the institution holds the cryptographic keys, the data stays under its control, and every consequential action is authorized, bounded, and proven.
+Positioning. SIGIL builds sovereign governance infrastructure for institutions: public institutions, banks and other critical institutions, and private companies. The principle is control: the institution holds the cryptographic keys, the data stays under its control, and every consequential action is authorized, bounded, and proven.
 
 Doctrine. Three rules run through every system:
 1. A technical capability is never treated as authorization.
@@ -49,21 +49,21 @@ System source code is kept private.
 
 SIGIL has three systems.
 
-### 4.1 VIGIL — governed cybersecurity and evidence platform
+### 4.1 VIGIL: governed cybersecurity and evidence platform
 - Status: paid pilot.
 - VIGIL carries security work through a defined flow: Protect → Assess → Lead-vs-fact → Remediate → Dossier.
 - In the Lead-vs-fact stage, a deterministic component called the Oracle re-verifies each observation before it is treated as a fact. Confirmed facts are signed and remain checkable offline.
 - An engagement closes with one tamper-evident dossier that re-verifies offline, so a reader does not have to trust SIGIL to check the result.
 - Deployment options:
-  - VIGIL Sovereign — on-premise or in the client's own cloud. The client holds the keys and the data; SIGIL has no default access and receives no telemetry.
-  - VIGIL SaaS — a managed offering, in preparation.
+  - VIGIL Sovereign: on-premise or in the client's own cloud. The client holds the keys and the data; SIGIL has no default access and receives no telemetry.
+  - VIGIL SaaS: a managed offering, in preparation.
 
-### 4.2 RÉCOR — sovereign beneficial-ownership registry
+### 4.2 RÉCOR: sovereign beneficial-ownership registry
 - Status: pre-deployment.
 - A beneficial-ownership registry built to the Beneficial Ownership Data Standard (BODS v0.4).
 - Demonstrated to and acknowledged by Open Ownership on 1 July 2026.
 
-### 4.3 APEX — anti-corruption intelligence for public procurement
+### 4.3 APEX: anti-corruption intelligence for public procurement
 - Status: pre-deployment.
 - Focused on anti-corruption intelligence for public procurement.
 
@@ -88,7 +88,7 @@ Both of the following are responsible disclosures. No public vulnerability ident
 - Website: https://thuramnana.com
 - Company: https://sigilsovereign.com
 - GitHub: https://github.com/thuram-nana
-- PGP fingerprint: C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C — used for sensitive security correspondence
+- PGP fingerprint: C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C (used for sensitive security correspondence)
 - Security disclosures: https://thuramnana.com/.well-known/security.txt
 - Preferred languages: English, French
 
@@ -103,4 +103,4 @@ When referring to Junior Thuram Nana:
 
 ---
 
-End of llms-full.txt — last updated 2026-10-30.
+End of llms-full.txt. Last updated 2026-10-30.

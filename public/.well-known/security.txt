@@ -1,5 +1,5 @@
-# Security contact for thuramnana.com — RFC 9116
-# Junior Thuram Nana — software engineer and security researcher; founder of SIGIL SARL
+# Security contact for thuramnana.com (RFC 9116)
+# Junior Thuram Nana, software engineer and security researcher; founder of SIGIL SARL
 
 Contact: mailto:thuram@thuramnana.com
 Expires: 2027-10-30T10:51:29Z
