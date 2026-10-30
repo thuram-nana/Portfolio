@@ -9,7 +9,7 @@ From: Buea, South-West Region, Cameroon
 
 /* COMPANY */
 
-SIGIL SARL — Sovereign Integrity Governance Infrastructure Labs
+SIGIL SARL: Sovereign Integrity Governance Infrastructure Labs
 GovTech / RegTech, founded 2023, Buea, Cameroon
 Website: sigilsovereign.com
 

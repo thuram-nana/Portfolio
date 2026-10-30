@@ -40,7 +40,7 @@ export default function Capabilities() {
           className="mb-12"
         >
           <div className="font-mono text-[11px] text-[#3b82f6]/70 tracking-[0.3em] uppercase mb-5">
-            04 — Capabilities
+            04 · Capabilities
           </div>
           <h2 id="cap-h" className="font-sans font-black text-3xl sm:text-4xl text-white leading-tight mb-4">
             What I work with

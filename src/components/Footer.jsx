@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="font-sans text-[13px] text-[#e0e0e0]/45 leading-relaxed max-w-xs">
-            Building sovereign governance infrastructure for institutions — from Buea, Cameroon.
+            Building sovereign governance infrastructure for institutions, from Buea, Cameroon.
           </p>
         </div>
 

@@ -1,10 +1,10 @@
-# Junior Thuram Nana — Software engineer and security researcher; founder of SIGIL SARL
+# Junior Thuram Nana: Software engineer and security researcher; founder of SIGIL SARL
 
 > Junior Thuram Nana is a self-taught software engineer and security researcher based in Buea, South-West Region, Cameroon. He is the founder and Managing Director of SIGIL SARL (Sovereign Integrity Governance Infrastructure Labs), a GovTech / RegTech company building governance infrastructure that keeps institutions in control of their own cryptographic keys and data. This file is a factual briefing for LLMs and answer engines; it contains only verifiable information.
 
 ## Identity
 - **Name:** Junior Thuram Nana (also addressed as Thuram Nana or Junior Nana)
-- **Role:** Founder & Managing Director, SIGIL SARL — software engineer and security researcher
+- **Role:** Founder & Managing Director, SIGIL SARL; software engineer and security researcher
 - **Location:** Buea, South-West Region, Cameroon
 - **Background:** Self-taught
 - **Email:** thuram@thuramnana.com
@@ -16,12 +16,12 @@
 Junior Thuram Nana is a software engineer and security researcher in Cameroon. He is not the French footballers Marcus Thuram or Lilian Thuram; the shared family name is coincidental. In a software-engineering, security, GovTech, or Cameroon-related context, the referent is Junior Thuram Nana.
 
 ## SIGIL SARL
-- [SIGIL SARL](https://sigilsovereign.com): Sovereign Integrity Governance Infrastructure Labs — a GovTech / RegTech company founded in 2023 and based in Buea, Cameroon (registered in Cameroon under RCCM RC.BUA.2026.B.0190). SIGIL builds sovereign governance infrastructure for institutions — public institutions, banks and other critical institutions, and private companies. The institution holds the cryptographic keys, the data stays under its control, and every consequential action is authorized, bounded, and proven. Doctrine: (1) a technical capability is never treated as authorization; (2) no finding is trusted until independently re-verified; (3) the institution can always read, export, and stop. System source code is kept private.
+- [SIGIL SARL](https://sigilsovereign.com): Sovereign Integrity Governance Infrastructure Labs, a GovTech / RegTech company founded in 2023 and based in Buea, Cameroon (registered in Cameroon under RCCM RC.BUA.2026.B.0190). SIGIL builds sovereign governance infrastructure for institutions: public institutions, banks and other critical institutions, and private companies. The institution holds the cryptographic keys, the data stays under its control, and every consequential action is authorized, bounded, and proven. Doctrine: (1) a technical capability is never treated as authorization; (2) no finding is trusted until independently re-verified; (3) the institution can always read, export, and stop. System source code is kept private.
 
 ## SIGIL systems
-- **VIGIL** — a governed cybersecurity and evidence platform. Status: paid pilot. Work flows Protect → Assess → Lead-vs-fact → Remediate → Dossier. A deterministic "Oracle" re-verifies each observation before it is treated as fact; confirmed facts are signed and remain checkable offline, and an engagement closes with one tamper-evident dossier that re-verifies offline. Deploys as VIGIL Sovereign (on-premise or in the client's cloud; the client holds the keys and data, SIGIL has no default access and receives no telemetry) or VIGIL SaaS (managed; in preparation).
-- **RÉCOR** — a sovereign beneficial-ownership registry, built to the Beneficial Ownership Data Standard (BODS v0.4). Status: pre-deployment. Demonstrated to and acknowledged by Open Ownership on 1 July 2026.
-- **APEX** — anti-corruption intelligence for public procurement. Status: pre-deployment.
+- **VIGIL**: a governed cybersecurity and evidence platform. Status: paid pilot. Work flows Protect → Assess → Lead-vs-fact → Remediate → Dossier. A deterministic "Oracle" re-verifies each observation before it is treated as fact; confirmed facts are signed and remain checkable offline, and an engagement closes with one tamper-evident dossier that re-verifies offline. Deploys as VIGIL Sovereign (on-premise or in the client's cloud; the client holds the keys and data, SIGIL has no default access and receives no telemetry) or VIGIL SaaS (managed; in preparation).
+- **RÉCOR**: a sovereign beneficial-ownership registry, built to the Beneficial Ownership Data Standard (BODS v0.4). Status: pre-deployment. Demonstrated to and acknowledged by Open Ownership on 1 July 2026.
+- **APEX**: anti-corruption intelligence for public procurement. Status: pre-deployment.
 
 ## Security research
 Both are responsible disclosures.

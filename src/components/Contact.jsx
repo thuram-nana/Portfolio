@@ -29,13 +29,13 @@ export default function Contact() {
           className="mb-12"
         >
           <div className="font-mono text-[11px] text-[#3b82f6]/70 tracking-[0.3em] uppercase mb-5">
-            05 — Contact
+            05 · Contact
           </div>
           <h2 id="contact-h" className="font-sans font-black text-3xl sm:text-4xl text-white leading-tight mb-4">
             Let's talk
           </h2>
           <p className="font-sans text-[15px] text-[#e0e0e0]/60 leading-relaxed max-w-2xl">
-            For investors, institutions evaluating SIGIL, clients, and serious collaborators — reach out
+            For investors, institutions evaluating SIGIL, clients, and serious collaborators, reach out
             directly, or request a briefing and I'll walk you through the systems and where they stand.
           </p>
         </motion.div>
@@ -97,7 +97,7 @@ export default function Contact() {
         >
           <div>
             <div className="font-mono text-[10px] text-[#D4AF37]/60 tracking-[0.25em] uppercase mb-2">
-              PGP — for sensitive security correspondence
+              PGP for sensitive security correspondence
             </div>
             <button
               onClick={() => copy(PGP_FINGERPRINT.replace(/\s/g, ''), 'pgp')}

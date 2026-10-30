@@ -1,7 +1,8 @@
 name: auto-index
 
-# Triggers on every push to main (after the Netlify deploy lands, the
-# search engines find fresh content) plus a weekly cron as a safety net.
+# Triggers on every push to main (after the deploy lands, search engines
+# find fresh content) and on manual dispatch. No cron: a schedule trigger
+# makes GitHub auto-disable the workflow after 60 days of repo inactivity.
 #
 # Pings:
 #   1. IndexNow API (Bing, Yandex, Naver, Seznam — and any engine that joins)
@@ -18,9 +19,6 @@ name: auto-index
 on:
   push:
     branches: [main]
-  schedule:
-    # Daily at 09:13 UTC — keeps the index fresh even with no commits
-    - cron: '13 9 * * *'
   workflow_dispatch:
 
 permissions:

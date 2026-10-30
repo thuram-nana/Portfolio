@@ -88,7 +88,7 @@
       "@id": "https://thuramnana.com/#website",
       "url": "https://thuramnana.com/",
       "name": "Junior Thuram Nana",
-      "description": "Personal site of Junior Thuram Nana — software engineer and security researcher; founder of SIGIL SARL.",
+      "description": "Personal site of Junior Thuram Nana, software engineer and security researcher; founder of SIGIL SARL.",
       "publisher": { "@id": "https://thuramnana.com/#person" }
     }
   ]

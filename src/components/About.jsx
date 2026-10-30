@@ -7,12 +7,12 @@ const principles = [
   {
     k: '01',
     title: 'Capability is never authorization',
-    body: 'Being technically able to act is never treated as permission to act. Every consequential action passes a fail-closed chain — identity, role, signed scope, risk class, and human approval — before it runs.',
+    body: 'Being technically able to act is never treated as permission to act. Every consequential action passes a fail-closed chain of identity, role, signed scope, risk class, and human approval before it runs.',
   },
   {
     k: '02',
     title: 'Nothing is trusted until re-verified',
-    body: 'An observation stays a lead until an independent, deterministic check confirms it. Only re-verified facts are signed — and they stay checkable offline, without trusting the vendor.',
+    body: 'An observation stays a lead until an independent, deterministic check confirms it. Only re-verified facts are signed, and they stay checkable offline, without trusting the vendor.',
   },
   {
     k: '03',
@@ -37,7 +37,7 @@ export default function About() {
           className="mb-10"
         >
           <div className="font-mono text-[11px] text-[#3b82f6]/70 tracking-[0.3em] uppercase mb-5">
-            01 — About
+            01 · About
           </div>
           <h2 id="about-h" className="font-sans font-black text-3xl sm:text-4xl text-white leading-tight max-w-2xl">
             I build trust that institutions can hold in their own hands.
@@ -53,21 +53,21 @@ export default function About() {
             className="space-y-5 font-sans text-[15px] text-[#e0e0e0]/75 leading-relaxed"
           >
             <p>
-              I'm a self-taught software engineer and security researcher based in Buea, Cameroon, and the
-              founder and managing director of <span className="text-white font-medium">SIGIL SARL</span> —
+              I'm a self-taught software engineer and security researcher based in Buea, Cameroon. I'm also the
+              founder and managing director of <span className="text-white font-medium">SIGIL SARL</span>,
               a GovTech and RegTech company I started in 2023.
             </p>
             <p>
-              I began in independent security research — responsibly disclosing flaws to companies like
-              Meta and Samsung — and in building software across mobile, web, and backend systems. That
-              work taught me the same lesson each time: institutions are asked to trust software they can
-              neither see into nor control.
+              I started out in independent security research, responsibly disclosing flaws to companies like
+              Meta and Samsung, and in building software across mobile, web, and backend systems. That work
+              taught me the same lesson each time: institutions are asked to trust software they can neither
+              see into nor control.
             </p>
             <p>
               SIGIL is my answer. We build governance infrastructure for public institutions, banks, and
-              companies — systems that are powerful but provably bounded, where authority is explicit,
-              findings are re-verified before anyone acts on them, and the institution can always read,
-              export, and stop. Everything I build now is organized around that principle.
+              companies. The systems are powerful but provably bounded: authority is explicit, findings are
+              re-verified before anyone acts on them, and the institution can always read, export, and stop.
+              Everything I build now is organized around that principle.
             </p>
           </motion.div>
 
@@ -86,7 +86,7 @@ export default function About() {
                 ['Role', 'Founder & MD, SIGIL SARL'],
                 ['Discipline', 'Engineering · Security'],
                 ['Based in', 'Buea, Cameroon'],
-                ['Founded', 'SIGIL — 2023'],
+                ['Founded', '2023'],
                 ['Focus', 'Governance & RegTech'],
               ].map(([k, v]) => (
                 <div key={k} className="flex items-baseline justify-between gap-4 border-b border-white/5 pb-3 last:border-0 last:pb-0">
