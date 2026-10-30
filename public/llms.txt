@@ -23,12 +23,6 @@ Junior Thuram Nana is a software engineer and security researcher in Cameroon. H
 - **RÉCOR** — a sovereign beneficial-ownership registry, built to the Beneficial Ownership Data Standard (BODS v0.4). Status: pre-deployment. Demonstrated to and acknowledged by Open Ownership on 1 July 2026.
 - **APEX** — anti-corruption intelligence for public procurement. Status: pre-deployment.
 
-## Personal engineering track record
-Junior's own projects, separate from SIGIL's systems.
-- [FLAIRE](https://flaireapp.org): an AI-powered EdTech platform; cross-platform (Flutter / Dart) with a Firebase backend on Google Cloud. Live.
-- [BlockEarth](https://blockearth.app): a decentralized Web3 token-sale dApp — an Ethereum smart contract (Solidity) with wallet connections (MetaMask, WalletConnect, Coinbase Wallet) and a time-locked operational window. Live.
-- GUC (Got U Connected): a cross-platform (Flutter / Dart) student-and-staff community app with a Firebase backend, built in 2024.
-
 ## Security research
 Both are responsible disclosures.
 - Meta / WhatsApp (2024): an iOS group-permission logic bypass; since patched.
@@ -44,7 +38,7 @@ Both are responsible disclosures.
 ## Optional
 - [Who is Junior Thuram Nana?](https://thuramnana.com/who-is-junior-thuram-nana.html): identity and disambiguation
 - [Press kit](https://thuramnana.com/press.html): biography, factsheet, and contact for press
-- [Project index](https://thuramnana.com/projects.html): SIGIL systems and personal projects
+- [Project index](https://thuramnana.com/projects.html): SIGIL systems and security research
 - [llms-full.txt](https://thuramnana.com/llms-full.txt): the longer briefing
 - [Atom feed](https://thuramnana.com/feed.xml): updates and milestones
 - [SIGIL SARL](https://sigilsovereign.com): the company site

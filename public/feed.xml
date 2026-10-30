@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Junior Thuram Nana — Updates</title>
-  <subtitle>Milestones from SIGIL SARL and personal engineering projects by Junior Thuram Nana.</subtitle>
+  <subtitle>Milestones from SIGIL SARL by Junior Thuram Nana.</subtitle>
   <link href="https://thuramnana.com/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://thuramnana.com/" rel="alternate" type="text/html"/>
   <id>https://thuramnana.com/</id>
@@ -45,25 +45,5 @@
     <summary>RÉCOR, SIGIL's beneficial-ownership registry built to the Beneficial Ownership Data Standard (BODS v0.4), was demonstrated to and acknowledged by Open Ownership on 1 July 2026. The system is in pre-deployment.</summary>
     <category term="sigil"/>
     <category term="recor"/>
-  </entry>
-
-  <entry>
-    <title>FLAIRE live at flaireapp.org</title>
-    <id>https://thuramnana.com/#feed-flaire-live</id>
-    <link href="https://flaireapp.org" rel="alternate" type="text/html"/>
-    <updated>2026-10-30T10:51:29Z</updated>
-    <summary>FLAIRE, an AI-powered EdTech platform, is live. It is cross-platform (Flutter / Dart) with a Firebase backend on Google Cloud.</summary>
-    <category term="project"/>
-    <category term="flaire"/>
-  </entry>
-
-  <entry>
-    <title>BlockEarth live at blockearth.app</title>
-    <id>https://thuramnana.com/#feed-blockearth-live</id>
-    <link href="https://blockearth.app" rel="alternate" type="text/html"/>
-    <updated>2026-10-30T10:51:29Z</updated>
-    <summary>BlockEarth, a decentralized Web3 token-sale dApp, is live. It is an Ethereum smart contract (Solidity) with wallet connections (MetaMask, WalletConnect, Coinbase Wallet) and a time-locked operational window.</summary>
-    <category term="project"/>
-    <category term="blockearth"/>
   </entry>
 </feed>
